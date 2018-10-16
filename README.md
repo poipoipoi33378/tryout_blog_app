@@ -1,24 +1,11 @@
-# README
+# Tryout 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2018/10/16 スタート
 
-Things you may want to cover:
+応用的な画面やフォームを作成できるようになる
 
-* Ruby version
+##ゴール
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Blog、EntryのCRUDが画面から実行できるようにする。
+*Commentの登録と削除が画面からできるようにする。
+*Commentの承認が画面からできるようにする。
