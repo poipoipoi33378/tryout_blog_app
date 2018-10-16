@@ -27,12 +27,20 @@ RSpec.feature "Blogs", type: :feature do
     expect(page).to_not have_content @blog2.title
   end
 
-  scenario "user create new title" do
+  scenario "user create new title. An error occurs if the title is blank " do
     blog = FactoryBot.build(:blog)
     visit root_path
 
+    click_link 'New Blog'
+
     expect do
-      click_link 'New Blog'
+      fill_in "Title",with: ''
+      click_button "Save"
+      expect(page).to have_content "can't be blank"
+      save_and_open_page
+    end.to_not change(Blog,:count)
+
+    expect do
       fill_in "Title",with: blog.title
       click_button "Save"
     end.to change(Blog,:count).by(1)
@@ -40,7 +48,6 @@ RSpec.feature "Blogs", type: :feature do
     expect(page).to have_content @blog1.title
     expect(page).to have_content @blog2.title
     expect(page).to have_content blog.title
-
   end
 
   scenario "user edit title"
