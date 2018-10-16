@@ -1,0 +1,21 @@
+development:
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: BuntaBunta311
+  database: tryout_blog_development
+  encoding: utf8
+
+test:
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: BuntaBunta311
+  database: tryout_blog_test
+  encoding: utf8
+
+production:
+  adapter: mysql2
+  encoding: unicode
+  database: tryout_blog_production
+  pool: 5
