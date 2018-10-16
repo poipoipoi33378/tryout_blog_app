@@ -9,8 +9,8 @@
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= blog.title %></td>
-        <td>Show</td>
-        <td>Edit</td>
+        <td><%= link_to 'Show',blog_path(blog) %></td>
+        <td><%= link_to 'Edit',edit_blog_path(blog) %></td>
         <td><%= link_to 'Destroy',blog,method: :delete ,data:{ confirm: "You sure?"} %></td>
       </tr>
     <% end %>

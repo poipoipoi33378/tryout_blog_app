@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  before_action :set_blog,only: [:destroy]
+  before_action :set_blog,only: [:destroy,:edit,:update,:show]
   def index
     @blogs = Blog.all
   end
@@ -22,6 +22,21 @@ class BlogsController < ApplicationController
       redirect_to blogs_url
     else
       render 'new'
+    end
+  end
+
+  def edit
+  end
+
+  def show
+
+  end
+
+  def update
+    if @blog.update(blog_params)
+      redirect_to blogs_url
+    else
+      render :edit
     end
   end
 

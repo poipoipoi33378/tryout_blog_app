@@ -5,18 +5,16 @@ RSpec.feature "Blogs", type: :feature do
   before do
     @blog1 = FactoryBot.create(:blog)
     @blog2 = FactoryBot.create(:blog)
+
+    visit root_path
   end
 
   scenario "user show blog index" do
-    visit root_path
-
     expect(page).to have_content @blog1.title
     expect(page).to have_content @blog2.title
   end
 
   scenario "user delete blog title" ,js: true do
-    visit root_path
-
     expect do
       click_link 'Destroy', href: blog_path(@blog2)
       page.driver.browser.switch_to.alert.accept
@@ -29,15 +27,13 @@ RSpec.feature "Blogs", type: :feature do
 
   scenario "user create new title. An error occurs if the title is blank " do
     blog = FactoryBot.build(:blog)
-    visit root_path
-
     click_link 'New Blog'
 
     expect do
+      expect(page).to have_content 'New blog'
       fill_in "Title",with: ''
       click_button "Save"
       expect(page).to have_content "can't be blank"
-      save_and_open_page
     end.to_not change(Blog,:count)
 
     expect do
@@ -50,6 +46,29 @@ RSpec.feature "Blogs", type: :feature do
     expect(page).to have_content blog.title
   end
 
-  scenario "user edit title"
-  scenario "user show created blog title"
+  scenario "user edit title" do
+    update_title = "Update Title"
+
+    click_link 'Edit', href: edit_blog_path(@blog2)
+    expect do
+      expect(page).to have_content 'Edit blog'
+      fill_in "Title",with: update_title
+      click_button "Save"
+    end.to_not change(Blog,:count)
+
+    expect(page).to have_content @blog1.title
+    expect(page).to have_content update_title
+  end
+
+  scenario "user show created blog title" do
+
+    expect(page).to have_content @blog1.title
+    expect(page).to have_content @blog2.title
+
+    click_link 'Show', href: blog_path(@blog2)
+
+    expect(page).to have_content "Title:#{@blog2.title}"
+    expect(page).to have_link 'Edit',href: edit_blog_path(@blog2)
+    expect(page).to have_link 'Back',href: blogs_path
+  end
 end
