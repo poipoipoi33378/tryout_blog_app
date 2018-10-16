@@ -33,7 +33,6 @@ RSpec.feature "Blogs", type: :feature do
 
     expect do
       click_link 'New Blog'
-      save_and_open_page
       fill_in "Title",with: blog.title
       click_button "Save"
     end.to change(Blog,:count).by(1)
