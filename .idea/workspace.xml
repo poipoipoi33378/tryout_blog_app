@@ -6,8 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,7 +21,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tryout_blog_app@spec__tryout_blog_app.rcov" NAME="spec: tryout_blog_app Coverage Results" MODIFIED="1539672080518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Development__tryout_blog_app.rcov" NAME="Development: tryout_blog_app Coverage Results" MODIFIED="1539674631844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@spec__tryout_blog_app.rcov" NAME="spec: tryout_blog_app Coverage Results" MODIFIED="1539675574374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -49,8 +49,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="1" />
+          <entry key="erb" value="1" />
           <entry key="md" value="1" />
-          <entry key="rb" value="5" />
+          <entry key="rb" value="11" />
           <entry key="ruby-version" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -59,22 +60,25 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Ruby" value="6" />
+          <entry key="RHTML" value="1" />
+          <entry key="Ruby" value="12" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="24" />
+          <entry key="Gemfile" value="25" />
+          <entry key="erb" value="187" />
           <entry key="md" value="46" />
-          <entry key="rb" value="294" />
+          <entry key="rb" value="880" />
           <entry key="yml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="46" />
-          <entry key="Ruby" value="318" />
+          <entry key="RHTML" value="187" />
+          <entry key="Ruby" value="905" />
           <entry key="YAML" value="64" />
         </counts>
       </usages-collector>
@@ -87,13 +91,31 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Gemfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+                <state relative-caret-position="137">
+                  <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
@@ -111,11 +133,20 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/blog_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+                  <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -150,20 +181,33 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.ruby-version">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/blog_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spec/features/blogs_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/controllers/blogs_controller_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -171,6 +215,11 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cap</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,11 +229,16 @@
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/models/blog.rb" />
         <option value="$PROJECT_DIR$/spec/models/blog_spec.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/spec/factories/blogs.rb" />
+        <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
+        <option value="$PROJECT_DIR$/spec/features/blogs_spec.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
       </list>
     </option>
   </component>
@@ -193,6 +247,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -227,7 +288,26 @@
               <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
@@ -243,6 +323,24 @@
               <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
@@ -395,44 +493,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 29m 11s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 26m 54s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 31m 02s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 27m 27s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 31m 18s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 29m 08s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 33m 57s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 33m 42s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 36m 08s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 34m 47s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 40m 44s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 35m 14s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 41m 07s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 36m 46s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 15h 41m 23s.xml">
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 37m 15s.xml">
+      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 38m 29s.xml">
+      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__tryout_blog_app - 2018.10.16 at 16h 39m 38s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2731000" />
+    <option name="totallyTimeSpent" value="6267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-532" y="-1023" width="1569" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15127702" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15127702" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32983682" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -475,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/blog.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -489,24 +586,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/blog_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        <state relative-caret-position="137">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/controllers/blogs_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/blog_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/blogs.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/blogs_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
