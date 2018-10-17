@@ -20,8 +20,8 @@
     <tr>
       <td><%= entry.title %></td>
       <td><%= entry.body %></td>
-      <td><%= link_to 'Show',entry_path(entry) %></td>
-      <td><%= link_to 'Edit',edit_entry_path(entry) %></td>
+      <td><%= link_to 'Show',blog_entry_path(entry) %></td>
+      <td><%= link_to 'Edit',edit_blog_entry_path(entry) %></td>
       <td><%= link_to 'Destroy',entry,method: :delete ,data:{ confirm: "You sure?"} %></td>
     </tr>
   <% end %>
@@ -30,5 +30,5 @@
 
 <br>
 
-<%= link_to 'New Entry',new_entry_path %>
+<%= link_to 'New Entry',new_blog_entry_path(@blog) %>
 

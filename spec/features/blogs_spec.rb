@@ -86,6 +86,6 @@ RSpec.feature "Blogs", type: :feature do
       expect(page).to have_link "Destroy",href: entry_path(entry)
     end
 
-    expect(page).to have_link 'New Entry',href: new_entry_path
+    expect(page).to have_link 'New Entry',href: new_blog_entry_path(@blog2)
   end
 end
