@@ -60,15 +60,32 @@ RSpec.feature "Blogs", type: :feature do
     expect(page).to have_content update_title
   end
 
-  scenario "user show created blog title" do
+  scenario "user show created blog title and blog entries" do
 
-    expect(page).to have_content @blog1.title
-    expect(page).to have_content @blog2.title
+    entries = [FactoryBot.build(:entry),FactoryBot.build(:entry)]
+    entries.each do |entry|
+      @blog2.entries.create(title: entry.title,body: entry.body)
+    end
 
     click_link 'Show', href: blog_path(@blog2)
 
     expect(page).to have_content "Title:#{@blog2.title}"
     expect(page).to have_link 'Edit',href: edit_blog_path(@blog2)
     expect(page).to have_link 'Back',href: blogs_path
+
+    expect(page).to have_content "Listing entries"
+
+    expect(page).to have_content "Title"
+    expect(page).to have_content "Body"
+
+    @blog2.entries.each do |entry|
+      expect(page).to have_content entry.title
+      expect(page).to have_content entry.body
+      expect(page).to have_link "Show",href: entry_path(entry)
+      expect(page).to have_link "Edit",href: edit_entry_path(entry)
+      expect(page).to have_link "Destroy",href: entry_path(entry)
+    end
+
+    expect(page).to have_link 'New Entry',href: new_entry_path
   end
 end
