@@ -4,25 +4,25 @@ RSpec.feature "Blogs", type: :feature do
 
   before do
     @blog1 = FactoryBot.create(:blog)
-    @blog2 = FactoryBot.create(:blog)
+    @blog = FactoryBot.create(:blog)
 
     visit root_path
   end
 
   scenario "user show blog index" do
     expect(page).to have_content @blog1.title
-    expect(page).to have_content @blog2.title
+    expect(page).to have_content @blog.title
   end
 
   scenario "user delete blog title" ,js: true do
     expect do
-      click_link 'Destroy', href: blog_path(@blog2)
+      click_link 'Destroy', href: blog_path(@blog)
       page.driver.browser.switch_to.alert.accept
       expect(page).to have_content "Blog deleted"
     end.to change(Blog,:count).by(-1)
 
     expect(page).to have_content @blog1.title
-    expect(page).to_not have_content @blog2.title
+    expect(page).to_not have_content @blog.title
   end
 
   scenario "user create new title. An error occurs if the title is blank " do
@@ -42,14 +42,14 @@ RSpec.feature "Blogs", type: :feature do
     end.to change(Blog,:count).by(1)
 
     expect(page).to have_content @blog1.title
-    expect(page).to have_content @blog2.title
+    expect(page).to have_content @blog.title
     expect(page).to have_content blog.title
   end
 
   scenario "user edit title" do
     update_title = "Update Title"
 
-    click_link 'Edit', href: edit_blog_path(@blog2)
+    click_link 'Edit', href: edit_blog_path(@blog)
     expect do
       expect(page).to have_content 'Edit blog'
       fill_in "Title",with: update_title
@@ -64,13 +64,13 @@ RSpec.feature "Blogs", type: :feature do
 
     entries = [FactoryBot.build(:entry),FactoryBot.build(:entry)]
     entries.each do |entry|
-      @blog2.entries.create(title: entry.title,body: entry.body)
+      @blog.entries.create(title: entry.title, body: entry.body)
     end
 
-    click_link 'Show', href: blog_path(@blog2)
+    click_link 'Show', href: blog_path(@blog)
 
-    expect(page).to have_content "Title:#{@blog2.title}"
-    expect(page).to have_link 'Edit',href: edit_blog_path(@blog2)
+    expect(page).to have_content "Title:#{@blog.title}"
+    expect(page).to have_link 'Edit',href: edit_blog_path(@blog)
     expect(page).to have_link 'Back',href: blogs_path
 
     expect(page).to have_content "Listing entries"
@@ -78,14 +78,16 @@ RSpec.feature "Blogs", type: :feature do
     expect(page).to have_content "Title"
     expect(page).to have_content "Body"
 
-    @blog2.entries.each do |entry|
-      expect(page).to have_content entry.title
-      expect(page).to have_content entry.body
-      expect(page).to have_link "Show",href: entry_path(entry)
-      expect(page).to have_link "Edit",href: edit_entry_path(entry)
-      expect(page).to have_link "Destroy",href: entry_path(entry)
+    @blog.entries.each do |entry|
+      aggregate_failures do
+        expect(page).to have_content entry.title
+        expect(page).to have_content entry.body
+        expect(page).to have_link "Show",href: blog_entry_path(@blog,entry)
+        expect(page).to have_link "Edit",href: edit_blog_entry_path(@blog,entry)
+        expect(page).to have_link "Destroy",href: entry_path(entry)
+      end
     end
 
-    expect(page).to have_link 'New Entry',href: new_blog_entry_path(@blog2)
+    expect(page).to have_link 'New Entry',href: new_blog_entry_path(@blog)
   end
 end

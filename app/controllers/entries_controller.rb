@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
-  before_action :set_entry,only: [:destroy]
-  before_action :set_blog,only: [:new,:create]
+  before_action :set_entry,only: [:destroy,:edit,:update]
+  before_action :set_blog,only: [:new,:create,:edit]
 
   def destroy
     blog = @entry.blog
@@ -21,6 +21,17 @@ class EntriesController < ApplicationController
       redirect_to blog_path(@blog)
     else
       render 'new'
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @entry.update(entry_params)
+      redirect_to blog_path(@entry.blog)
+    else
+      render :edit
     end
   end
 
