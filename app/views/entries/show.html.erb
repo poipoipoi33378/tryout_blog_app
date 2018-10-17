@@ -1,0 +1,12 @@
+<h1>
+  <%= @blog.title %>
+</h1>
+<ul>
+  <li><%= "Title:#{@entry.title}" %></li>
+  <li><%= "Body:#{@entry.body}" %></li>
+</ul>
+
+<%= link_to 'Edit', edit_blog_entry_path(@blog,@entry) %> |
+<%= link_to 'Back', blog_path(@blog) %>
+
+<h2>Listing comments</h2>

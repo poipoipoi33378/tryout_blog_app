@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
-  before_action :set_entry,only: [:destroy,:edit,:update]
-  before_action :set_blog,only: [:new,:create,:edit]
+  before_action :set_entry,only: [:destroy,:edit,:update,:show]
+  before_action :set_blog,only: [:new,:create,:edit,:show]
 
   def destroy
     blog = @entry.blog
@@ -33,6 +33,9 @@ class EntriesController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def show
   end
 
   private
