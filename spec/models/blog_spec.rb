@@ -6,10 +6,7 @@ RSpec.describe Blog, type: :model do
     expect(blog).to be_valid
   end
 
-  it "is invalid without title" do
-    blog = Blog.new(title: nil)
-    expect(blog).to_not be_valid
-  end
+  it { is_expected.to validate_presence_of :title }
 
   it "is enable to save database" do
     blog = Blog.new(title: "タイトル")
