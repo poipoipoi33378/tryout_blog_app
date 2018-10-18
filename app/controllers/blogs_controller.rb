@@ -28,15 +28,15 @@ class BlogsController < ApplicationController
   def edit
   end
 
-  def show
-  end
-
   def update
     if @blog.update(blog_params)
       redirect_to blogs_url
     else
       render :edit
     end
+  end
+
+  def show
   end
 
   private
