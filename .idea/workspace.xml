@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f465d0-48cd-48cf-a201-4a796d21f52e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/blogs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/entries/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entries/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/entries/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entries/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/entries/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entries/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/support/capybara.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/capybara.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -66,7 +62,7 @@
           <entry key="erb" value="22" />
           <entry key="html" value="2" />
           <entry key="md" value="1" />
-          <entry key="rb" value="46" />
+          <entry key="rb" value="47" />
           <entry key="ruby-version" value="1" />
           <entry key="txt" value="1" />
           <entry key="yml" value="1" />
@@ -78,7 +74,7 @@
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="22" />
-          <entry key="Ruby" value="50" />
+          <entry key="Ruby" value="51" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -88,7 +84,7 @@
           <entry key="Ruby Console" value="233" />
           <entry key="erb" value="1232" />
           <entry key="md" value="46" />
-          <entry key="rb" value="3849" />
+          <entry key="rb" value="3861" />
           <entry key="yml" value="64" />
         </counts>
       </usages-collector>
@@ -96,7 +92,7 @@
         <counts>
           <entry key="Markdown" value="46" />
           <entry key="RHTML" value="1232" />
-          <entry key="Ruby" value="4109" />
+          <entry key="Ruby" value="4121" />
           <entry key="YAML" value="64" />
         </counts>
       </usages-collector>
@@ -109,7 +105,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/blogs/_form.html.erb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
@@ -139,8 +135,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
-                  <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+                <state relative-caret-position="318">
+                  <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spec/support/capybara.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -153,7 +158,7 @@
             <entry file="file://$PROJECT_DIR$/app/views/entries/_form.html.erb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
-                  <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+                  <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -183,7 +188,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/spec/support/capybara.rb" />
         <option value="$PROJECT_DIR$/app/views/blogs/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
@@ -209,6 +213,7 @@
         <option value="$PROJECT_DIR$/app/views/shared/_form_error.html.erb" />
         <option value="$PROJECT_DIR$/app/views/entries/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/_form.html.erb" />
+        <option value="$PROJECT_DIR$/spec/support/capybara.rb" />
       </list>
     </option>
   </component>
@@ -742,9 +747,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Entries_user_show_created_entry_title_and_body__tryout_blog_app - 2018.10.17 at 21h 56m 21s.xml">
-      <configuration name="Entries user show created entry title and body: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="spec__tryout_blog_app - 2018.10.17 at 21h 56m 40s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
@@ -772,9 +774,12 @@
     <history-entry file="spec__tryout_blog_app - 2018.10.18 at 09h 09m 50s.xml">
       <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
+    <history-entry file="spec__tryout_blog_app - 2018.10.18 at 09h 10m 31s.xml">
+      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45731000" />
+    <option name="totallyTimeSpent" value="45943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,7 +799,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32983682" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32983682" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32983682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -802,7 +807,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32983682" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32983682" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32983682" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -849,13 +854,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/capybara/capybara-201810161831571579706866.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/capybara.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1030,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_form_error.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1061,7 +1052,21 @@
     <entry file="file://$PROJECT_DIR$/app/views/entries/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/capybara.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
