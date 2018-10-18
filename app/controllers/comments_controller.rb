@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment,only: [:destroy]
+  before_action :set_comment,only: [:destroy,:edit]
   before_action :set_entry,only: [:create]
 
   def destroy
@@ -18,7 +18,12 @@ class CommentsController < ApplicationController
       @entry.comments.delete(@comment)
       render 'entries/show'
     end
+  end
 
+  def edit
+    @comment.approved = true
+    @comment.save
+    redirect_to blog_entry_path(@comment.entry.blog,@comment.entry)
   end
 
   private

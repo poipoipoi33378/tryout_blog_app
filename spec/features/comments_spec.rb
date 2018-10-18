@@ -83,7 +83,12 @@ RSpec.feature "Comments", type: :feature do
 
     expect(page).to_not have_content "New Comment Test"
     expect(page).to have_content '(承認待ち)'
+
+    click_link 'Approve'
+
+    aggregate_failures do
+      expect(page).to have_content "New Comment Test"
+      expect(page).to_not have_content '(承認待ち)'
+    end
   end
-
-
 end

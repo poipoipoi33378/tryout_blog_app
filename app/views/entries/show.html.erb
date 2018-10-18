@@ -29,9 +29,9 @@
         <% if comment.approved %>
           <td><%= comment.body %></td>
           <td></td>
-        <%  %>
-          <td>Approve</td>
+        <% else %>
           <td>"(承認待ち)"</td>
+          <td><%= link_to 'Approve', edit_comment_path(comment) %>Approve</td>
         <% end %>
         <td><%= link_to 'Destroy',comment,method: :delete ,data:{ confirm: "You sure?"} %></td>
       </tr>
