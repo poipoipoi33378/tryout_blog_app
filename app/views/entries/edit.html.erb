@@ -1,5 +1,5 @@
 <h1>Edit entry</h1>
 
-<%= render partial: 'form',locals: {entry: @entry,path: blog_entry_path(@entry)} %>
+<%= render partial: 'form',locals: {blog: @blog,entry: @entry} %>
 
 <%= link_to 'Back',blogs_path %>

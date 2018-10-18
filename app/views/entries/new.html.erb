@@ -1,5 +1,5 @@
 <h1><%= "New entry:#{@blog.title}" %></h1>
 
-<%= render partial: 'form',locals: {entry: @entry,path: blog_entries_path(@blog)} %>
+<%= render partial: 'form',locals: {blog: @blog,entry: @entry} %>
 
 <%= link_to 'Back',blog_path(@blog) %>

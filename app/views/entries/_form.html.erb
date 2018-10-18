@@ -1,16 +1,5 @@
-<%= form_for(entry,url: path) do |f| %>
-  <% if entry.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(entry.errors.count,"error") %>prohibited this entry from being saved:
-      </h2>
-      <ul>
-        <% entry.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for [blog,entry] do |f| %>
+  <%= render 'shared/form_error',object: entry %>
 
   <div class="field">
     <%= f.label :title %>
