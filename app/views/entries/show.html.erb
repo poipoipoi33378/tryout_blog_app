@@ -1,7 +1,7 @@
 <div class="section-blog">
-  <h1>
+  <h2>
     <%= @blog.title %>
-  </h1>
+  </h2>
 </div>
 
 <div class="section-entry">
@@ -21,6 +21,8 @@
     <thead>
     <tr>
       <th>Body</th>
+      <th></th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
@@ -31,7 +33,7 @@
           <td></td>
         <% else %>
           <td>"(承認待ち)"</td>
-          <td><%= link_to 'Approve', edit_comment_path(comment) %>Approve</td>
+          <td><%= link_to 'Approve', edit_comment_path(comment) %></td>
         <% end %>
         <td><%= link_to 'Destroy',comment,method: :delete ,data:{ confirm: "You sure?"} %></td>
       </tr>
@@ -47,7 +49,7 @@
     <%= render 'shared/form_error',object: @comment %>
     <div class="field">
       <%= f.label :body %>
-      <%= f.text_field :body %>
+      <%= f.text_area :body %>
     </div>
 
     <div class="actions">
