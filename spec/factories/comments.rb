@@ -1,7 +1,6 @@
 FactoryBot.define do
   factory :comment do
-    body "MyText"
-    approved false
-    entry nil
+    sequence(:body){|n| "comment#{n}"}
+    approved true
   end
 end

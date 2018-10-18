@@ -16,7 +16,7 @@ RSpec.feature "Entries", type: :feature do
     click_link 'Show', href: blog_path(@blog)
   end
 
-  scenario "user delete entry" ,js: true do
+  scenario "user destroy entry" ,js: true do
     expect do
       expect do
         click_link 'Destroy', href: entry_path(@entry2)

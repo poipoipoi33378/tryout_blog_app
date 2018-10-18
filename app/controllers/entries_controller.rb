@@ -36,6 +36,7 @@ class EntriesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
   end
 
   private
@@ -50,5 +51,4 @@ class EntriesController < ApplicationController
     def entry_params
       params.require(:entry).permit(:title,:body)
     end
-
   end

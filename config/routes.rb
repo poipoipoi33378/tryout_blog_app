@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :blogs do
     resources :entries,except: [:destroy]
   end
-  resources :entries,only: [:destroy]
-
-
+  resources :entries,only: [:destroy] do
+    resources :comments,only: [:create]
+  end
+  resources :comments,only: [:destroy]
 end

@@ -22,7 +22,7 @@ RSpec.describe Comment, type: :model do
       expect do
         expect do
           expect do
-            expect(blog.save).to be_truthy
+            expect(entry.save).to be_truthy
           end.to change(Comment,:count).by(1)
         end.to_not change(Entry,:count)
       end.to_not change(Blog,:count)
