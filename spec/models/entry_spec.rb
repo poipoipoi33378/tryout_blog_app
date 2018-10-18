@@ -41,7 +41,7 @@ RSpec.describe Entry, type: :model do
     expect(Entry.first.blog).to eq blog
   end
 
-  context "factry test" do
+  context "factory test" do
     it "is destroyed by Blog" do
       blog = FactoryBot.create(:blog)
       expect do

@@ -7,7 +7,7 @@ RSpec.feature "Entries", type: :feature do
     @blog = FactoryBot.create(:blog)
     entries = [FactoryBot.build(:entry),FactoryBot.build(:entry)]
     entries.each do |entry|
-      @blog.entries.create(title: entry.title, body: entry.body)
+      @blog.entries.create(entry.attributes)
     end
     @entry1 = @blog.entries.first
     @entry2 = @blog.entries.second
@@ -70,20 +70,6 @@ RSpec.feature "Entries", type: :feature do
     expect(page).to have_content @entry1.title
     expect(page).to have_content update_title
     expect(page).to have_content update_body
-  end
-
-  scenario "user show created entry title and body" do
-    click_link 'Show', href: blog_entry_path(@blog,@entry2)
-
-    aggregate_failures do
-      expect(page).to have_content "#{@blog.title}"
-      expect(page).to have_content "Title:#{@entry2.title}"
-      expect(page).to have_content "Body:#{@entry2.body}"
-      expect(page).to have_link 'Edit',href: edit_blog_entry_path(@blog,@entry2)
-      expect(page).to have_link 'Back',href: blog_path(@blog)
-
-      expect(page).to have_content "Listing comments"
-    end
   end
 
 end
