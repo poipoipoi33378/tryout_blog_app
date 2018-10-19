@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment,only: [:destroy,:edit]
+  before_action :set_comment,only: [:destroy,:update]
   before_action :set_entry,only: [:create]
 
   def destroy
@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
     end
   end
 
-  def edit
+  def update
     @comment.approved = true
     @comment.save
     redirect_to entry_path(@comment.entry)

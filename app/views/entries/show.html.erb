@@ -33,7 +33,7 @@
           <td></td>
         <% else %>
           <td>"(承認待ち)"</td>
-          <td><%= link_to 'Approve', edit_comment_path(comment) %></td>
+          <td><%= link_to 'Approve', comment_path(comment),method: :put %></td>
         <% end %>
         <td><%= link_to 'Destroy',comment,method: :delete ,data:{ confirm: "You sure?"} %></td>
       </tr>

@@ -46,9 +46,6 @@ class EntriesController < ApplicationController
 
     def set_blog
       @blog = Blog.find(params[:blog_id])
-      unless params[:id].nil?
-        @entry = Entry.find(params[:id])
-      end
     end
 
     def entry_params

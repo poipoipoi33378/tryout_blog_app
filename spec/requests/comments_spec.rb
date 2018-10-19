@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "Entries", type: :request do
-
+RSpec.describe "Comments", type: :request do
   let(:blog){Blog.first}
   let(:entry){Blog.second.entries.first}
+  let(:comment){Blog.second.entries.second.comments.first}
 
   before do
     3.times do
@@ -22,37 +22,40 @@ RSpec.describe "Entries", type: :request do
 
   it "not work index" do
     expect do
-      get blog_entries_path(blog)
+      get entry_comments_path(comment)
     end.to raise_error(ActionController::RoutingError)
   end
 
-  it "work new" do
-    get new_blog_entry_path(blog)
-    expect(response).to have_http_status(:ok)
+  it "not work new" do
+    expect do
+      get new_entry_comments_path(comment)
+    end.to raise_error(StandardError)
   end
 
   it "work create" do
-    post blog_entries_path(blog),params: {entry: FactoryBot.attributes_for(:entry)}
+    post entry_comments_path(entry),params: {comment: FactoryBot.attributes_for(:comment)}
     expect(response).to have_http_status(:found)
   end
 
-  it "work edit" do
-    get edit_entry_path(entry)
-    expect(response).to have_http_status(:ok)
+  it "not work edit" do
+    expect do
+      get edit_comment_path(comment)
+    end.to raise_error(StandardError)
   end
 
   it "work update" do
-    patch entry_path(entry),params: {entry: FactoryBot.attributes_for(:entry)}
+    patch comment_path(comment)
     expect(response).to have_http_status(:found)
   end
 
   it "work destroy" do
-    delete entry_path(entry)
+    delete comment_path(comment)
     expect(response).to have_http_status(:found)
   end
 
-  it "work show" do
-    get entry_path(entry)
-    expect(response).to have_http_status(:ok)
+  it "not work show" do
+    expect do
+      get comment_path(comment)
+    end.to raise_error(ActionController::RoutingError)
   end
 end
