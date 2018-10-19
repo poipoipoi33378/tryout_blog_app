@@ -82,8 +82,8 @@ RSpec.feature "Blogs", type: :feature do
       aggregate_failures do
         expect(page).to have_content entry.title
         expect(page).to have_content entry.body
-        expect(page).to have_link "Show",href: blog_entry_path(@blog,entry)
-        expect(page).to have_link "Edit",href: edit_blog_entry_path(@blog,entry)
+        expect(page).to have_link "Show",href: entry_path(entry)
+        expect(page).to have_link "Edit",href: edit_entry_path(entry)
         expect(page).to have_link "Destroy",href: entry_path(entry)
       end
     end

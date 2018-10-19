@@ -59,7 +59,7 @@ RSpec.feature "Entries", type: :feature do
     update_title = "Update Title"
     update_body = "Update Body"
 
-    click_link 'Edit', href: edit_blog_entry_path(@blog,@entry2)
+    click_link 'Edit', href: edit_entry_path(@entry2)
     expect do
       expect(page).to have_content 'Edit entry'
       fill_in "Title",with: update_title

@@ -1,6 +1,6 @@
 <div class="section-blog">
   <h2>
-    <%= @blog.title %>
+    <%= @entry.blog.title %>
   </h2>
 </div>
 
@@ -11,8 +11,8 @@
   </ul>
 </div>
 
-<%= link_to 'Edit', edit_blog_entry_path(@blog,@entry) %> |
-<%= link_to 'Back', blog_path(@blog) %>
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', blog_path(@entry.blog) %>
 
 <div class="section-comment">
   <h2>Listing comments</h2>

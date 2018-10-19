@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   before_action :set_entry,only: [:destroy,:edit,:update,:show]
-  before_action :set_blog,only: [:new,:create,:edit,:show]
+  before_action :set_blog,only: [:new,:create]
 
   def destroy
     blog = @entry.blog
@@ -46,6 +46,9 @@ class EntriesController < ApplicationController
 
     def set_blog
       @blog = Blog.find(params[:blog_id])
+      unless params[:id].nil?
+        @entry = Entry.find(params[:id])
+      end
     end
 
     def entry_params

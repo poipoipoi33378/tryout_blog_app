@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
     flash[:success] = "Comment deleted"
-    redirect_to blog_entry_path(@comment.entry.blog,@comment.entry)
+    redirect_to entry_path(@comment.entry)
   end
 
   def create
@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     @blog = @entry.blog
 
     if @comment.save
-      redirect_to blog_entry_path(@blog,@entry)
+      redirect_to entry_path(@entry)
     else
       @entry.comments.delete(@comment)
       render 'entries/show'
@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
   def edit
     @comment.approved = true
     @comment.save
-    redirect_to blog_entry_path(@comment.entry.blog,@comment.entry)
+    redirect_to entry_path(@comment.entry)
   end
 
   private

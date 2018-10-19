@@ -10,7 +10,7 @@ RSpec.feature "Comments", type: :feature do
 
     visit root_path
     click_link 'Show', href: blog_path(@blog)
-    click_link 'Show', href: blog_entry_path(@blog,@entry)
+    click_link 'Show', href: entry_path(@entry)
   end
 
   scenario "user show created entry and comments" do
@@ -18,7 +18,7 @@ RSpec.feature "Comments", type: :feature do
       expect(page).to have_content "#{@blog.title}"
       expect(page).to have_content "Title:#{@entry.title}"
       expect(page).to have_content "Body:#{@entry.body}"
-      expect(page).to have_link 'Edit',href: edit_blog_entry_path(@blog,@entry)
+      expect(page).to have_link 'Edit',href: edit_entry_path(@entry)
       expect(page).to have_link 'Back',href: blog_path(@blog)
 
       expect(page).to have_content "Listing comments"
