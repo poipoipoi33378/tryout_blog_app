@@ -24,14 +24,16 @@ a{
   text-decoration:none;
 }
 
-ul{
-  list-style-type: none;
-  padding-top: 0px;
-  padding-left: 0px;
-  li{
-    font-size: 1.2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.section-entry{
+  ul{
+    list-style-type: none;
+    padding-top: 0px;
+    padding-left: 0px;
+    li{
+      font-size: 1.2em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
   }
 }
 
@@ -69,5 +71,19 @@ footer{
   p{
     text-align: center;
     font-size: 1.5em;
+  }
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  .form-control {
+    color: red;
   }
 }
