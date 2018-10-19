@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 body{
   color: #3e3d3d
 }
@@ -22,19 +25,6 @@ h1.border{
 a{
   color: #008000;
   text-decoration:none;
-}
-
-.section-entry{
-  ul{
-    list-style-type: none;
-    padding-top: 0px;
-    padding-left: 0px;
-    li{
-      font-size: 1.2em;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-    }
-  }
 }
 
 div.section-comment{
@@ -83,7 +73,8 @@ footer{
 }
 
 .field_with_errors {
+  @extend .has-error;
   .form-control {
-    color: red;
+    color: $state-danger-text;
   }
 }

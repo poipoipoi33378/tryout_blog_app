@@ -14,10 +14,10 @@
       <% flash.each do |type,message| %>
         <%=content_tag(:div,message,class: "alert alert-#{type}") %>
       <% end %>
+      <%= yield %>
+      <footer>
+        <p>Tryout 2018/10/18</p>
+      </footer>
     </div>
-  <%= yield %>
-  <footer>
-    <p>Tryout 2018/10/18</p>
-  </footer>
   </body>
 </html>

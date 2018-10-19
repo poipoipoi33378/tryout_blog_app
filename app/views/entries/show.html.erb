@@ -1,59 +1,63 @@
-<div class="section-blog">
-  <h2>
-    <%= @entry.blog.title %>
-  </h2>
-</div>
-
-<div class="section-entry">
-  <ul>
-    <li><%= "Title:#{@entry.title}" %></li>
-    <li><%= "Body:#{@entry.body}" %></li>
-  </ul>
-</div>
-
-<%= link_to 'Edit', edit_entry_path(@entry) %> |
-<%= link_to 'Back', blog_path(@entry.blog) %>
-
-<div class="section-comment">
-  <h2>Listing comments</h2>
-
-  <table>
-    <thead>
-    <tr>
-      <th>Body</th>
-      <th></th>
-      <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    <% @entry.comments.each do |comment| %>
-      <tr>
-        <% if comment.approved %>
-          <td><%= comment.body %></td>
-          <td></td>
-        <% else %>
-          <td>(承認待ち)</td>
-          <td><%= link_to 'Approve', comment_path(comment),method: :put %></td>
+<div class="row">
+  <header>
+    <div class="section-blog">
+      <h1>
+        <%= @entry.blog.title %>
+      </h1>
+    </div>
+    <div class="section-entry">
+      <ul class="list-unstyled">
+        <li><%= "Title:#{@entry.title}" %></li>
+        <li><%= "Body:#{@entry.body}" %></li>
+      </ul>
+    </div>
+    <nav>
+      <%= link_to 'Edit', edit_entry_path(@entry) %> |
+      <%= link_to 'Back', blog_path(@entry.blog) %>
+    </nav>
+  </header>
+  <section>
+    <div class="section-comment">
+      <h2>Listing comments</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Body</th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @entry.comments.each do |comment| %>
+          <tr>
+            <% if comment.approved %>
+              <td><%= comment.body %></td>
+              <td></td>
+            <% else %>
+              <td>(承認待ち)</td>
+              <td><%= link_to 'Approve', comment_path(comment),method: :put %></td>
+            <% end %>
+            <td><%= link_to 'Destroy',comment,method: :delete ,data:{ confirm: "You sure?"} %></td>
+          </tr>
         <% end %>
-        <td><%= link_to 'Destroy',comment,method: :delete ,data:{ confirm: "You sure?"} %></td>
-      </tr>
-    <% end %>
-    </tbody>
-  </table>
-</div>
-
-<div class="section-comment-new">
-  <h2>New comment</h2>
-
-  <%= form_for [@entry,@comment] do |f| %>
-    <%= render 'shared/form_error',object: @comment %>
-    <div class="field">
-      <%= f.label :body %>
-      <%= f.text_area :body %>
+        </tbody>
+      </table>
     </div>
 
-    <div class="actions">
-      <%= f.submit "Save" %>
+    <div class="section-comment-new">
+      <h2>New comment</h2>
+
+      <%= form_for [@entry,@comment] do |f| %>
+        <%= render 'shared/form_error',object: @comment %>
+        <div class="field">
+          <%= f.label :body %>
+          <%= f.text_area :body %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Save" %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </section>
 </div>

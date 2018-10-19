@@ -1,35 +1,37 @@
-<h2>
-  Title:<%= @blog.title %>
-</h2>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
-
-<h2>Listing entries</h2>
-<table>
-  <thead>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @blog.entries.each do |entry| %>
-    <tr>
-      <td><%= entry.title %></td>
-      <td><%= entry.body %></td>
-      <td><%= link_to 'Show',entry_path(entry) %></td>
-      <td><%= link_to 'Edit',edit_entry_path(entry) %></td>
-      <td><%= link_to 'Destroy',entry,method: :delete ,data:{ confirm: "You sure?"} %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Entry',new_blog_entry_path(@blog) %>
-
+<div class="row">
+  <header>
+    <h1>
+      Title:<%= @blog.title %>
+    </h1>
+    <nav>
+      <%= link_to 'Edit', edit_blog_path(@blog) %> |
+      <%= link_to 'Back', blogs_path %>
+    </nav>
+  </header>
+  <section>
+    <h2>Listing entries</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @blog.entries.each do |entry| %>
+        <tr>
+          <td><%= entry.title %></td>
+          <td><%= entry.body %></td>
+          <td><%= link_to 'Show',entry_path(entry) %></td>
+          <td><%= link_to 'Edit',edit_entry_path(entry) %></td>
+          <td><%= link_to 'Destroy',entry,method: :delete ,data:{ confirm: "You sure?"} %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <%= link_to 'New Entry',new_blog_entry_path(@blog) %>
+  </section>
+</div>

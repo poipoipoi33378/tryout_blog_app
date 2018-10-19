@@ -1,5 +1,7 @@
-<h1><%= "New entry:#{@blog.title}" %></h1>
-
-<%= render partial: 'form',locals: {blog: @blog,entry: @entry} %>
-
-<%= link_to 'Back',blog_path(@blog) %>
+<div class="row">
+  <h1><%= "New entry:#{@blog.title}" %></h1>
+  <div class="col-md-8 col-md-offset-1">
+    <%= render partial: 'form',locals: {blog: @blog,entry: @entry} %>
+    <%= link_to 'Back',blog_path(@blog) %>
+  </div>
+</div>

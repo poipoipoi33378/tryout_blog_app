@@ -1,5 +1,7 @@
-<h1>Edit entry</h1>
-
-<%= render partial: 'form',locals: {blog: @blog,entry: @entry} %>
-
-<%= link_to 'Back',blogs_path %>
+<div class="row">
+  <h1>Edit entry</h1>
+  <div class="col-md-8 col-md-offset-1">
+    <%= render partial: 'form',locals: {blog: @blog,entry: @entry} %>
+    <%= link_to 'Back',blogs_path %>
+  </div>
+</div>

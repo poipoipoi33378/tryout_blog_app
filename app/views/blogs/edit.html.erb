@@ -1,5 +1,7 @@
-<h1>Edit blog</h1>
-
-<%= render 'form',blog: @blog %>
-
-<%= link_to 'Back',blogs_path %>
+<div class="row">
+  <h1>Edit blog</h1>
+  <div class="col-md-6 col-md-offset-3">
+    <%= render 'form',blog: @blog %>
+    <%= link_to 'Back',blogs_path %>
+  </div>
+</div>
