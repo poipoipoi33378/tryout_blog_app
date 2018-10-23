@@ -1,5 +1,7 @@
-<h1>Notice#sendmail_confirm</h1>
+<h1>新しいコメントが登録されました。</h1>
 
-<p>
-  <%= @greeting %>, find me in app/views/notice_mailer/sendmail_confirm.html.erb
-</p>
+<p>承認または削除してください。</p>
+
+<p><%= "Blog:#{@comment.entry.blog.title}" %></p>
+<p><%= "Entry:#{@comment.entry.title}" %></p>
+<p><%= "Comment:#{@comment.body}" %></p>

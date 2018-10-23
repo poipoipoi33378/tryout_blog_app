@@ -8,6 +8,6 @@ class NoticeMailer < ApplicationMailer
   def sendmail_confirm(comment)
     @comment = comment
 
-    mail to: "poipoipoipoi33378@gmail.com"
+    mail to: "poipoipoi33378@gmail.com"
   end
 end

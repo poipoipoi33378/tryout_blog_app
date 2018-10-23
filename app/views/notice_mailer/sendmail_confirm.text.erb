@@ -1,3 +1,8 @@
-Notice#sendmail_confirm
+新しいコメントが登録されました。
 
-<%= @greeting %>, find me in app/views/notice_mailer/sendmail_confirm.text.erb
+承認または削除してください。
+
+<%= "Blog:#{@comment.entry.blog.title}" %>
+<%= "Entry:#{@comment.entry.title}" %>
+<%= "Comment:#{@comment.body}" %>
+
