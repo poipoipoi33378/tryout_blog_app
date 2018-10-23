@@ -6,5 +6,7 @@ FactoryBot.define do
     trait :with_5_comments do
       after(:create){ |entry| create_list(:comment,5,entry: entry) }
     end
+
+    association :blog
   end
 end
