@@ -5,3 +5,5 @@
 <p><%= "Blog:#{@comment.entry.blog.title}" %></p>
 <p><%= "Entry:#{@comment.entry.title}" %></p>
 <p><%= "Comment:#{@comment.body}" %></p>
+
+<%= link_to "コメントページに移動", entry_url(@comment.entry) %>
