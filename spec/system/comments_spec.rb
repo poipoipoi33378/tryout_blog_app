@@ -24,6 +24,10 @@ RSpec.describe 'Comments', type: :feature do
     mail = ActionMailer::Base.deliveries.last
 
     aggregate_failures do
+      expect(mail.subject).to eq("新しいコメントが投稿されました")
+      expect(mail.to).to eq(["poipoipoi33378@gmail.com"])
+      expect(mail.from).to eq(["noreply@example.com"])
+
       expect(mail.html_part.decoded).to match("新しいコメントが登録されました。")
       expect(mail.html_part.decoded).to match("承認または削除してください。")
       expect(mail.html_part.decoded).to match("Blog:#{entry.blog.title}")
