@@ -13,6 +13,7 @@ class CommentsController < ApplicationController
     @blog = @entry.blog
 
     if @comment.save
+      NoticeMailer.sendmail_confirm(@comment).deliver_now
       redirect_to entry_path(@entry)
     else
       @entry.comments.delete(@comment)
