@@ -2,15 +2,16 @@ require 'rails_helper'
 
 RSpec.feature "Entries", type: :feature do
 
+  let(:entry1){ @blog.entries.first }
+  let(:entry2){ @blog.entries.second }
+
   before do
     FactoryBot.create(:blog)
-    @blog = FactoryBot.create(:blog)
-    entries = [FactoryBot.build(:entry),FactoryBot.build(:entry)]
-    entries.each do |entry|
-      @blog.entries.create(entry.attributes)
+    @blog = FactoryBot.create(:blog) do |blog|
+      2.times do
+        blog.entries.create(FactoryBot.attributes_for(:entry))
+      end
     end
-    @entry1 = @blog.entries.first
-    @entry2 = @blog.entries.second
 
     visit root_path
     click_link 'Show', href: blog_path(@blog)
@@ -19,14 +20,14 @@ RSpec.feature "Entries", type: :feature do
   scenario "user destroy entry" ,js: true do
     expect do
       expect do
-        click_link 'Destroy', href: entry_path(@entry2)
+        click_link 'Destroy', href: entry_path(entry2)
         page.driver.browser.switch_to.alert.accept
         expect(page).to have_content "Entry deleted"
       end.to change(Entry,:count).by(-1)
     end.to_not change(Blog,:count)
 
-    expect(page).to have_content @entry1.title
-    expect(page).to_not have_content @entry2.title
+    expect(page).to have_content entry1.title
+    expect(page).to_not have_content entry2.title
   end
 
   scenario "user create new entry. An error occurs if the title or body is blank " do
@@ -50,8 +51,8 @@ RSpec.feature "Entries", type: :feature do
       expect(page).to have_content "Entry created"
     end.to change(Entry,:count).by(1)
 
-    expect(page).to have_content @entry1.title
-    expect(page).to have_content @entry2.title
+    expect(page).to have_content entry1.title
+    expect(page).to have_content entry2.title
     expect(page).to have_content entry.title
   end
 
@@ -59,7 +60,7 @@ RSpec.feature "Entries", type: :feature do
     update_title = "Update Title"
     update_body = "Update Body"
 
-    click_link 'Edit', href: edit_entry_path(@entry2)
+    click_link 'Edit', href: edit_entry_path(entry2)
     expect do
       expect(page).to have_content 'Edit entry'
       fill_in "Title",with: update_title
@@ -67,7 +68,7 @@ RSpec.feature "Entries", type: :feature do
       click_button "Save"
     end.to_not change(Entry,:count)
 
-    expect(page).to have_content @entry1.title
+    expect(page).to have_content entry1.title
     expect(page).to have_content update_title
     expect(page).to have_content update_body
   end
