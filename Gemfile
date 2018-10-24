@@ -9,9 +9,6 @@ gem 'bootstrap-sass', '3.3.7'
 
 group :development, :test do
   gem 'mysql2'
-  gem 'rspec-rails', '~> 3.6.0'
-  gem 'email_spec'
-  gem "letter_opener"
 end
 
 group :production do
@@ -51,24 +48,29 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "factory_bot_rails", "~> 4.10.0"
+
+  gem 'email_spec'
+  gem "letter_opener"
+
+  gem 'capybara', '~> 2.16.1'
+  gem 'selenium-webdriver','~> 3.8'
+  gem 'chromedriver-helper','~> 1.1.0'
+  gem 'rspec-rails', '~> 3.7.2'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-commands-rspec'
+
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'spring-commands-rspec'
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
   gem 'launchy', '~> 2.4.3'
   gem 'shoulda-matchers',
       git: 'https://github.com/thoughtbot/shoulda-matchers.git',

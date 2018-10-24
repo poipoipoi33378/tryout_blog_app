@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.feature "Blogs", type: :feature do
+RSpec.feature "Blogs", type: :system do
 
-  before do
+  background do
     @blog1 = FactoryBot.create(:blog)
     @blog = FactoryBot.create(:blog)
 

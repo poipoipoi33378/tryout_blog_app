@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Entries", type: :feature do
+RSpec.feature "Entries", type: :system do
 
   let(:entry1){ @blog.entries.first }
   let(:entry2){ @blog.entries.second }
