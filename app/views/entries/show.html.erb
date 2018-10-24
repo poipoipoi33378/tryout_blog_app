@@ -47,16 +47,10 @@
     <div class="section-comment-new">
       <h2>New comment</h2>
 
-      <%= form_for [@entry,@comment] do |f| %>
-        <%= render 'shared/form_error',object: @comment %>
-        <div class="field">
-          <%= f.label :body %>
-          <%= f.text_area :body %>
-        </div>
-
-        <div class="actions">
-          <%= f.submit "Save" %>
-        </div>
+      <%= simple_form_for [@entry,@comment] do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :body %>
+        <%= f.button :submit,"Save" %>
       <% end %>
     </div>
   </section>

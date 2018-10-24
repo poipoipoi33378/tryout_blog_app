@@ -14,7 +14,6 @@ RSpec.describe NoticeMailer, type: :mailer do
 
     it "renders the body" do
       aggregate_failures do
-        p mail.body.encoded
         # expect(mail.body.encoded).to match("新しいコメントが登録されました。")
         # expect(mail.body.encoded).to match("承認または削除してください。")
         # expect(mail.body.encoded).to match("Blog:#{comment.entry.blog.title}")
