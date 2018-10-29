@@ -1,86 +1,113 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-  color: #3e3d3d
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
 }
 
-table{
-  width: 100%;
-  border:none;
-  border-collapse: collapse;
-  text-align: left;
-  line-height: 2em;
-  margin-bottom: 50px;
-}
-th,td{
-  border-top: solid 1px #BBBBBB;
-  border-bottom: solid 1px #BBBBBB;
+
+/* universal */
+
+body {
+  padding-top: 60px;
 }
 
-h1.border{
-  border-bottom: solid 1px #BBBBBB;
+section {
+  overflow: auto;
 }
 
-a{
-  color: #008000;
-  text-decoration:none;
+textarea {
+  resize: vertical;
 }
 
-div.section-comment{
-  padding-top: 0em;
-  margin-top: 1em;
-  border-top: solid 1px #BBBBBB;
-  h2{
-    margin-top: 0.5em;
-    padding-top: 0em;
-  }
+.center {
+  text-align: center;
 }
 
-div.field{
-  label{
-    display: block;
-  }
-}
-textarea,input[type="text"]{
-  width: 80%;
+.center h1 {
+  margin-bottom: 10px;
 }
 
-input[type="submit"] {
-  font-size: 1em;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  width: 6em;
-  height: 2em;
-  background-color: #BBBBBB;
-  border-style: none;
-  border-radius: 4px;
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
 }
 
-footer{
-  p{
-    text-align: center;
-    font-size: 1.5em;
-  }
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-#error_explanation {
-  color: red;
-  ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
 }
 
-.field_with_errors {
-  @extend .has-error;
-  .form-control {
-    color: $state-danger-text;
-  }
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
 }
 
 // header
 
 #logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
   text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+  }
+  ul li {
+    float: left;
+    margin-left: 15px;
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }

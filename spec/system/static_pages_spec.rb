@@ -7,7 +7,7 @@ RSpec.feature "Static Pages", type: :system do
 
     within 'header' do
       aggregate_failures do
-        expect(page).to have_content /TRYOUT APP/i
+        expect(page).to have_content 'TRYOUT APP'
         expect(page).to have_link "Home"
         expect(page).to have_link "Help"
         expect(page).to have_link "Log in"
@@ -24,6 +24,5 @@ RSpec.feature "Static Pages", type: :system do
       expect(page).to have_link "Contact"
       expect(page).to have_link "News"
     end
-
   end
 end
