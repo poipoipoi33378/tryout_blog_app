@@ -5,6 +5,8 @@ RSpec.feature "Static Pages", type: :system do
   scenario 'home page' do
     visit root_path
 
+    expect(page).to have_title 'Tryout app'
+
     within 'header' do
       aggregate_failures do
         expect(page).to have_content 'TRYOUT APP'
@@ -24,5 +26,21 @@ RSpec.feature "Static Pages", type: :system do
       expect(page).to have_link "Contact"
       expect(page).to have_link "News"
     end
+
+    expect(page).to have_link 'tryout app',href: root_path
+
+    click_link 'Home'
+    expect(page).to have_title 'Tryout app'
+
+    click_link 'Help'
+    expect(current_path).to eq help_path
+    expect(page).to have_title 'Tryout app | Help'
+
+    click_link 'About'
+    expect(current_path).to eq about_path
+    expect(page).to have_title 'Tryout app | About'
+
+    expect(page).to have_link 'Contact',href: 'https://www.facebook.com/poipoipoi33378'
+    expect(page).to have_link 'News',href: 'http://legacycode.hatenablog.com/'
   end
 end
