@@ -10,7 +10,7 @@
   </header>
   <section>
     <h2>Listing entries</h2>
-    <table>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>Title</th>
@@ -32,6 +32,6 @@
       <% end %>
       </tbody>
     </table>
-    <%= link_to 'New Entry',new_blog_entry_path(@blog) %>
+    <%= link_to 'New Entry',new_blog_entry_path(@blog),class: "btn btn-primary" %>
   </section>
 </div>

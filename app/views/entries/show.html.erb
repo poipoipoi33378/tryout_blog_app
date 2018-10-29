@@ -19,7 +19,7 @@
   <section>
     <div class="section-comment">
       <h2>Listing comments</h2>
-      <table>
+      <table class="table table-striped">
         <thead>
         <tr>
           <th>Body</th>
@@ -50,7 +50,7 @@
       <%= simple_form_for [@entry,@comment] do |f| %>
         <%= f.error_notification %>
         <%= f.input :body %>
-        <%= f.button :submit,"Save" %>
+        <%= f.button :submit,"Save",class: "btn btn-primary" %>
       <% end %>
     </div>
   </section>

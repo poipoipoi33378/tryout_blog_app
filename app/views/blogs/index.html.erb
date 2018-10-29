@@ -1,7 +1,7 @@
 <div class="row">
   <section>
     <h1>Listing blogs</h1>
-    <table>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>Title</th>
@@ -23,7 +23,7 @@
     </table>
   </section>
   <nav>
-    <%= link_to 'New Blog',new_blog_path %>
+    <%= link_to 'New Blog',new_blog_path,class: "btn btn-primary" %>
   </nav>
 </div>
 

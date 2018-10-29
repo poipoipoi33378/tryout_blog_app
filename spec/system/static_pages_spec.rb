@@ -18,9 +18,10 @@ RSpec.feature "Static Pages", type: :system do
 
     expect(page).to have_content "Welcome to Sample App"
     expect(page).to have_content "This is the home page for Tryout sample application"
-    expect(page).to have_link "Sign up now!"
-    expect(page).to have_link "Login now!"
-    expect(page).to have_link "Login with Google now!"
+    expect(page).to have_link "Start blog now!"
+    # expect(page).to have_link "Sign up now!"
+    # expect(page).to have_link "Login now!"
+    # expect(page).to have_link "Login with Google now!"
 
     within 'footer' do
       expect(page).to have_content "Tryout 2018.10.18 start"
@@ -44,5 +45,10 @@ RSpec.feature "Static Pages", type: :system do
 
     expect(page).to have_link 'Contact',href: 'https://www.facebook.com/poipoipoi33378'
     expect(page).to have_link 'News',href: 'http://legacycode.hatenablog.com/'
+
+    click_link 'Home'
+    click_link 'Start blog now!'
+
+    expect(current_path).to eq blogs_path
   end
 end
