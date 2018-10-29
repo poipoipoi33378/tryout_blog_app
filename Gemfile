@@ -7,6 +7,7 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
 gem 'bootstrap-sass', '3.3.7'
 gem 'simple_form'
+gem 'haml-rails'
 
 group :development, :test do
   gem 'mysql2'

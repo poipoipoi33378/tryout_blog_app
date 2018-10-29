@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'blogs#index'
+  root 'static_pages#home'
   resources :blogs do
     resources :entries,only: [:new,:create]
   end
