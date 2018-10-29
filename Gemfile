@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'haml-rails'
 gem 'devise'
+gem "omniauth-google-oauth2"
 
 group :development, :test do
   gem 'mysql2'

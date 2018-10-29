@@ -20,6 +20,7 @@ RSpec.feature "Static Pages", type: :system do
       expect(page).to have_content "Welcome to Sample App"
       expect(page).to have_content "This is the home page for Tryout sample application"
       expect(page).to have_link "Sign up now!"
+      expect(page).to have_link "Log in with Google"
 
       within 'footer' do
         expect(page).to have_content "Tryout 2018.10.18 start"
@@ -68,12 +69,13 @@ RSpec.feature "Static Pages", type: :system do
         expect(page).to have_content 'Welcome! You have signed up successfully.'
       end.to change(User,:count).by(1)
 
-      expect(page).to have_content 'Account'
-      click_link 'Account'
-      expect(page).to have_content 'Profile'
-      expect(page).to have_content 'Setting'
-      expect(page).to have_content 'Log out'
-      expect(page).to_not have_content 'Log in'
+      within 'header' do
+        expect(page).to have_content 'Account'
+        click_link 'Account'
+        expect(page).to have_content 'Setting'
+        expect(page).to have_content 'Log out'
+        expect(page).to_not have_content 'Log in'
+      end
     end
 
     scenario 'user log in and show profile and setting and log out' do
@@ -85,19 +87,22 @@ RSpec.feature "Static Pages", type: :system do
 
       fill_in "Email",with: user.email
       fill_in "user_password",with: user.password
-
       click_button 'Log in'
 
-      expect(page).to_not have_content 'Log in'
+      within 'header' do
+        expect(page).to_not have_content 'Log in'
 
-      click_link 'Account'
-      click_link 'Setting'
-      expect(page).to have_button 'Update'
+        click_link 'Account'
+        click_link 'Setting'
+      end
 
-      click_link 'Account'
-      click_link 'Log out'
+        expect(page).to have_button 'Update'
 
-      expect(page).to have_content 'Log in'
+      within 'header' do
+        click_link 'Account'
+        click_link 'Log out'
+        expect(page).to have_content 'Log in'
+      end
     end
   end
 
