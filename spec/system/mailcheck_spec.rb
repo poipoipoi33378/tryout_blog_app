@@ -7,7 +7,7 @@ RSpec.feature 'Comments', type: :system do
 
     entry = FactoryBot.create(:entry)
 
-    visit root_path
+    visit blogs_path
     click_link 'Show', href: blog_path(entry.blog)
     click_link 'Show', href: entry_path(entry)
 

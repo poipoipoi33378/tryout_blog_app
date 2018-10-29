@@ -6,7 +6,7 @@ RSpec.feature "Blogs", type: :system do
     @blog1 = FactoryBot.create(:blog)
     @blog = FactoryBot.create(:blog)
 
-    visit root_path
+    visit blogs_path
   end
 
   scenario "user show blog index" do

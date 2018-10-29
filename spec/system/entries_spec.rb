@@ -13,7 +13,7 @@ RSpec.feature "Entries", type: :system do
       end
     end
 
-    visit root_path
+    visit blogs_path
     click_link 'Show', href: blog_path(@blog)
   end
 

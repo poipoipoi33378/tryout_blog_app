@@ -8,7 +8,7 @@ RSpec.feature "Comments", type: :system do
     @entry = FactoryBot.create(:entry,:with_5_comments,blog_id: @blog.id)
     expect(@entry.comments.length).to eq 5
 
-    visit root_path
+    visit blogs_path
     click_link 'Show', href: blog_path(@blog)
     click_link 'Show', href: entry_path(@entry)
   end

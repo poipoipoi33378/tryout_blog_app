@@ -19,6 +19,8 @@ RSpec.feature "Static Pages", type: :system do
     expect(page).to have_content "Welcome to Sample App"
     expect(page).to have_content "This is the home page for Tryout sample application"
     expect(page).to have_link "Sign up now!"
+    expect(page).to have_link "Login now!"
+    expect(page).to have_link "Login with Google now!"
 
     within 'footer' do
       expect(page).to have_content "Tryout 2018.10.18 start"
