@@ -1,7 +1,18 @@
-.center.jumbotron
-  %h1 Welcome to Sample App
-  %h2 This is the home page for Tryout sample application
-  %div.welcome_button
-    = link_to 'Sign up now!',new_user_registration_path,class: "btn btn-lg btn-primary"
-  %div.welcome_button
-    = link_to 'Log in with Google',user_google_oauth2_omniauth_authorize_path,class: "btn btn-lg btn-primary"
+-if user_signed_in?
+  .row
+    %aside.col-md-4
+      %section.user_info
+        %h1
+          = current_user.name
+        %span
+          = link_to 'view my profile',current_user
+        %span
+          = pluralize(current_user.blogs.count,'blog')
+-else
+  .center.jumbotron
+    %h1 Welcome to Sample App
+    %h2 This is the home page for Tryout sample application
+    %div.welcome_button
+      = link_to 'Sign up now!',new_user_registration_path,class: "btn btn-lg btn-primary"
+    %div.welcome_button
+      = link_to 'Log in with Google',user_google_oauth2_omniauth_authorize_path,class: "btn btn-lg btn-primary"

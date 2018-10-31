@@ -1,9 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Entry, type: :model do
+  let(:user){ FactoryBot.create(:user) }
+  let(:blog){ Blog.create(title:"blog title",user_id: user.id) }
+
   it "is valid with title,body,blog_id" do
-    FactoryBot.create(:blog,id: 1)
-    entry = Entry.new(blog_id:1,title:"title",body:"entry body")
+    entry = Entry.new(blog_id: blog.id,title:"title",body:"entry body")
     expect(entry).to be_valid
   end
 
@@ -12,7 +14,6 @@ RSpec.describe Entry, type: :model do
   it { is_expected.to validate_presence_of :body }
 
   it "is belong to Blog.Blog has many entries" do
-    blog = Blog.create(title:"blog title")
     entry = blog.entries.build(title:"entry title",body:"entry body")
     expect(entry.title).to eq "entry title"
     expect(entry.body).to eq "entry body"
@@ -24,7 +25,6 @@ RSpec.describe Entry, type: :model do
   end
 
   it "is destroyed by Blog" do
-    blog = Blog.create(title:"blog title")
     expect do
       blog.entries.create(title:"entry title",body:"entry body")
     end.to change(Entry,:count).by(1)
@@ -35,7 +35,6 @@ RSpec.describe Entry, type: :model do
   end
 
   it "is associated by blog" do
-    blog = Blog.create(title:"blog title")
     blog.entries.create(title:"entry title",body:"entry body")
 
     expect(Entry.first.blog).to eq blog
@@ -43,7 +42,6 @@ RSpec.describe Entry, type: :model do
 
   context "factory test" do
     it "is destroyed by Blog" do
-      blog = FactoryBot.create(:blog)
       expect do
         blog.entries.create(title:"entry title",body:"entry body")
         expect(blog.entries.first.title).to eq "entry title"

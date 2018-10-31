@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
+  let(:user){FactoryBot.create(:user)}
+
   context "Entry" do
     it "is valid with body and approved" do
       FactoryBot.create(:blog,id: 1)
@@ -14,7 +16,7 @@ RSpec.describe Comment, type: :model do
     it { is_expected.to validate_presence_of :body }
 
     it "is belong to Entry.Entry has many comments" do
-      blog = Blog.create(title:"blog title")
+      blog = Blog.create(title:"blog title",user_id: user.id)
       entry = blog.entries.create(title:"entry title",body:"entry body")
       comment = entry.comments.build(body: "comment")
       expect(comment.body).to eq "comment"
@@ -29,7 +31,7 @@ RSpec.describe Comment, type: :model do
     end
 
     it "is destroyed by Blog" do
-      blog = Blog.create(title:"blog title")
+      blog = Blog.create(title:"blog title",user_id: user.id)
       entry = blog.entries.create(title:"entry title",body:"entry body")
       entry.comments.create(body:"comment")
       expect(Comment.count).to eq 1
@@ -40,7 +42,7 @@ RSpec.describe Comment, type: :model do
     end
 
     it "is associated by blog" do
-      blog = Blog.create(title:"blog title")
+      blog = Blog.create(title:"blog title",user_id: user.id)
       entry = blog.entries.create(title:"entry title",body:"entry body")
       entry.comments.create(body:"comment")
 

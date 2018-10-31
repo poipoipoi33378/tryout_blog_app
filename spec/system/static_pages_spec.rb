@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.feature "Static Pages", type: :system do
 
-  context 'homo page' do
-    scenario 'home page element check' do
+  context 'home page' do
+    scenario 'home page element without login' do
       visit root_path
 
       expect(page).to have_title 'Tryout app'
@@ -44,6 +44,27 @@ RSpec.feature "Static Pages", type: :system do
 
       expect(page).to have_link 'Contact',href: 'https://www.facebook.com/poipoipoi33378'
       expect(page).to have_link 'News',href: 'http://legacycode.hatenablog.com/'
+    end
+
+    scenario 'home page element with login' do
+      user = FactoryBot.create(:user)
+      3.times do
+        user.blogs.create(FactoryBot.attributes_for(:blog))
+      end
+
+      sign_in user
+
+      visit root_path
+      expect(page).to have_title 'Tryout app'
+
+      expect(page).to_not have_content "Welcome to Sample App"
+      expect(page).to_not have_content "This is the home page for Tryout sample application"
+      expect(page).to_not have_link "Sign up now!"
+      expect(page).to_not have_link "Log in with Google"
+
+      expect(page).to have_content user.name
+      expect(page).to have_link 'view my profile',href: user_path(user)
+      expect(page).to have_content '3 blogs'
     end
   end
 
@@ -149,4 +170,5 @@ RSpec.feature "Static Pages", type: :system do
       expect(current_path).to eq root_path
     end
   end
+
 end
