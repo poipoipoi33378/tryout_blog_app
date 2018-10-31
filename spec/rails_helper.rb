@@ -70,6 +70,7 @@ RSpec.configure do |config|
     driven_by :selenium_chrome_headless
   end
 
+  config.include Devise::Test::IntegrationHelpers, type: :system
 end
 
 Shoulda::Matchers.configure do |config| config.integrate do |with|

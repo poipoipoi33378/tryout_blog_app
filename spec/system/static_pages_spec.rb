@@ -121,6 +121,32 @@ RSpec.feature "Static Pages", type: :system do
         expect(page).to have_content 'Log in'
       end
     end
-  end
 
+    scenario 'user log in and show profile and setting and log out' do
+      user = FactoryBot.create(:user)
+
+      sign_in user
+
+      visit root_path
+
+      click_link 'Account'
+      click_link 'Setting'
+
+      expect do
+        fill_in "Name",with: 'user_test_name'
+        fill_in "Email",with: 'user_test@emal.com'
+        expect(page).to have_content 'Password'
+        expect(page).to have_content 'Password confirmation'
+        fill_in "Current password",with: user.password
+
+        click_button 'Update'
+      end.to_not change(User,:count)
+
+      user.reload
+      expect(user.name).to eq 'user_test_name'
+      expect(user.email).to eq 'user_test@emal.com'
+
+      expect(current_path).to eq root_path
+    end
+  end
 end
