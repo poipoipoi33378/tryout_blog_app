@@ -60,6 +60,7 @@ RSpec.feature "Static Pages", type: :system do
 
       click_link 'Sign up now!'
 
+      fill_in "Name",with: user.name
       fill_in "Email",with: user.email
       fill_in "user_password",with: user.password
       fill_in "Password confirmation",with: user.password

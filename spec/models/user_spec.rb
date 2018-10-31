@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
 
   it 'valid user' do
     expect do
-      user = User.create(email:'tester@email.com',password: 'foobar')
+      user = User.create(name:'test',email:'tester@email.com',password: 'foobar')
       expect(user).to be_valid
     end.to change(User,:count).by(1)
   end
@@ -12,6 +12,9 @@ RSpec.describe User, type: :model do
   it { is_expected.to validate_presence_of :email }
   it { is_expected.to validate_presence_of :password }
   it { is_expected.to validate_uniqueness_of(:email).case_insensitive }
+  it { is_expected.to validate_presence_of :name }
+  it { is_expected.to validate_length_of(:name).is_at_most(50) }
+
 
   context 'factory user' do
     it 'is valid' do
