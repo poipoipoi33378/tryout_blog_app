@@ -79,6 +79,22 @@ RSpec.feature "Static Pages", type: :system do
       end
     end
 
+    # TODO テスト毎にポート番号が自動で変わるので上手くいかない。後で調べる
+    # scenario 'user log in with google' do
+    #   visit root_path
+    #
+    #   expect(page).to_not have_content 'Log out'
+    #
+    #   click_link 'Log in with Google'
+    #
+    #   expect do
+    #     click_link 'seiichi sugahara'
+    #   end.to change(User,:count).by(1)
+    #
+    #   expect(page).to have_content 'Log out'
+    #
+    # end
+
     scenario 'user log in and show profile and setting and log out' do
       user = FactoryBot.create(:user)
 
