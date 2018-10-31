@@ -71,6 +71,7 @@ RSpec.configure do |config|
   end
 
   config.include Devise::Test::IntegrationHelpers, type: :system
+  config.include RequestSpecHelper, type: :request
 end
 
 Shoulda::Matchers.configure do |config| config.integrate do |with|

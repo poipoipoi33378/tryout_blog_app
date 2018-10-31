@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.feature "Static Pages", type: :system do
 
+  let(:user){ FactoryBot.create(:user) }
+
   context 'home page' do
     scenario 'home page element without login' do
       visit root_path
@@ -47,7 +49,6 @@ RSpec.feature "Static Pages", type: :system do
     end
 
     scenario 'home page element with login' do
-      user = FactoryBot.create(:user)
       3.times do
         user.blogs.create(FactoryBot.attributes_for(:blog))
       end
@@ -70,8 +71,6 @@ RSpec.feature "Static Pages", type: :system do
 
   context 'user registration' ,js: true do
     scenario 'user registration' do
-      user = FactoryBot.build(:user)
-
       visit root_path
 
       expect(page).to_not have_content 'Account'
@@ -81,10 +80,10 @@ RSpec.feature "Static Pages", type: :system do
 
       click_link 'Sign up now!'
 
-      fill_in "Name",with: user.name
-      fill_in "Email",with: user.email
-      fill_in "user_password",with: user.password
-      fill_in "Password confirmation",with: user.password
+      fill_in "Name",with: 'user.name'
+      fill_in "Email",with: 'new_user@email.com'
+      fill_in "user_password",with: 'user.password'
+      fill_in "Password confirmation",with: 'user.password'
 
       expect do
         click_button 'Sign up'
@@ -117,8 +116,6 @@ RSpec.feature "Static Pages", type: :system do
     # end
 
     scenario 'user log in and show profile and setting and log out' do
-      user = FactoryBot.create(:user)
-
       visit root_path
 
       click_link 'Log in'
@@ -143,9 +140,7 @@ RSpec.feature "Static Pages", type: :system do
       end
     end
 
-    scenario 'user log in and show profile and setting and log out' do
-      user = FactoryBot.create(:user)
-
+    scenario 'user update' do
       sign_in user
 
       visit root_path
@@ -169,6 +164,16 @@ RSpec.feature "Static Pages", type: :system do
 
       expect(current_path).to eq root_path
     end
-  end
 
+    scenario 'user profile' do
+      sign_in user
+
+      visit root_path
+
+      click_link 'Account'
+      click_link 'Profile'
+
+      expect(page).to have_content user.name
+    end
+  end
 end

@@ -3,9 +3,11 @@ require 'rails_helper'
 RSpec.feature "Blogs", type: :system do
 
   background do
-    @blog1 = FactoryBot.create(:blog)
-    @blog = FactoryBot.create(:blog)
+    user = FactoryBot.create(:user)
+    @blog1 = FactoryBot.create(:blog,user_id: user.id)
+    @blog = FactoryBot.create(:blog,user_id: user.id)
 
+    sign_in user
     visit blogs_path
   end
 

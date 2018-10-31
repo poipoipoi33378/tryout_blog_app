@@ -2,8 +2,9 @@ require 'rails_helper'
 
 RSpec.describe "Blogs", type: :request do
 
-  let(:blog){Blog.first}
-  let(:entry){Blog.second.entries.first}
+  let(:user){ FactoryBot.create(:user) }
+  let(:blog){ Blog.first }
+  let(:entry){ Blog.second.entries.first }
 
   before do
     3.times do
@@ -55,6 +56,7 @@ RSpec.describe "Blogs", type: :request do
   end
 
   it "work create" do
+    sign_in user
     post blogs_path(blog),params: {blog: FactoryBot.attributes_for(:blog)}
     expect(response).to have_http_status(:found)
   end
