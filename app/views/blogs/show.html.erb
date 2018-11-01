@@ -10,6 +10,9 @@
   </header>
   <section>
     <h2>Listing entries</h2>
+
+    <%= will_paginate @entries %>
+
     <table class="table table-striped">
       <thead>
       <tr>
@@ -21,7 +24,7 @@
       </tr>
       </thead>
       <tbody>
-      <% @blog.entries.each do |entry| %>
+      <% @entries.each do |entry| %>
         <tr>
           <td><%= entry.title %></td>
           <td><%= entry.body %></td>
@@ -32,6 +35,9 @@
       <% end %>
       </tbody>
     </table>
+
+    <%= will_paginate @entries %>
+
     <%= link_to 'New Entry',new_blog_entry_path(@blog),class: "btn btn-primary" %>
   </section>
 </div>

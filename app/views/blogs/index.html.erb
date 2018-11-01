@@ -3,6 +3,9 @@
 <div class="row">
   <section>
     <h1>Listing blogs</h1>
+
+    <%= will_paginate %>
+
     <table class="table table-striped">
       <thead>
       <tr>
@@ -23,6 +26,9 @@
       <% end %>
       </tbody>
     </table>
+
+    <%= will_paginate %>
+
   </section>
   <nav>
     <%= link_to 'New Blog',new_blog_path,class: "btn btn-primary" %>

@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog,only: [:destroy,:edit,:update,:show]
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.paginate(page: params[:page])
   end
 
   def destroy
@@ -37,6 +37,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @entries = @blog.entries.paginate(page: params[:page])
   end
 
   private

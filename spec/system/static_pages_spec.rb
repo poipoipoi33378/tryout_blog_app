@@ -189,6 +189,13 @@ RSpec.feature "Static Pages", type: :system do
       User.all.each do |user|
         expect(page).to have_content(user.name)
       end
+
+      30.times do
+        FactoryBot.create(:user)
+      end
+      click_link 'Users'
+      expect(page).to have_content 'Next'
+      expect(page).to have_content 'Previous'
     end
 
   end

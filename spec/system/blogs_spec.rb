@@ -2,8 +2,9 @@ require 'rails_helper'
 
 RSpec.feature "Blogs", type: :system do
 
+  let(:user){ FactoryBot.create(:user) }
+
   background do
-    user = FactoryBot.create(:user)
     @blog1 = FactoryBot.create(:blog,user_id: user.id)
     @blog = FactoryBot.create(:blog,user_id: user.id)
 
@@ -14,6 +15,14 @@ RSpec.feature "Blogs", type: :system do
   scenario "user show blog index" do
     expect(page).to have_content @blog1.title
     expect(page).to have_content @blog.title
+
+    30.times do
+      FactoryBot.create(:blog,user_id: user.id)
+    end
+
+    visit blogs_path
+    expect(page).to have_content 'Next'
+    expect(page).to have_content 'Previous'
   end
 
   scenario "user delete blog title" ,js: true do
@@ -91,5 +100,15 @@ RSpec.feature "Blogs", type: :system do
     end
 
     expect(page).to have_link 'New Entry',href: new_blog_entry_path(@blog)
+
+    30.times do
+      @blog.entries.create(FactoryBot.attributes_for(:entry))
+    end
+
+    visit blogs_path
+    click_link 'Show', href: blog_path(@blog)
+
+    expect(page).to have_content 'Next'
+    expect(page).to have_content 'Previous'
   end
 end
