@@ -289,8 +289,8 @@ Devise.setup do |config|
   # end
 
   config.omniauth :google_oauth2,
-           Rails.application.secrets.google_client_id,
-           Rails.application.secrets.google_client_secret,
+           Rails.application.credentials.google_client_id,
+           Rails.application.credentials.google_client_secret,
            {
                scope: 'userinfo.email, userinfo.profile',
                prompt: 'select_account',
