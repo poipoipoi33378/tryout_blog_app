@@ -16,8 +16,9 @@ RSpec.feature "Comments", type: :system do
   scenario "user show created entry and comments" do
     aggregate_failures do
       expect(page).to have_content "#{@blog.title}"
-      expect(page).to have_content "Title:#{@entry.title}"
-      expect(page).to have_content "Body:#{@entry.body}"
+      expect(page).to have_content "Title: #{@entry.title}"
+      expect(page).to have_content "Body: #{@entry.body}"
+      expect(page).to have_link @entry.blog.user.name,href: user_path(@entry.blog.user)
       expect(page).to have_link 'Edit',href: edit_entry_path(@entry)
       expect(page).to have_link 'Back',href: blog_path(@blog)
 

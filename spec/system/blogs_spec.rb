@@ -99,6 +99,7 @@ RSpec.feature "Blogs", type: :system do
       aggregate_failures do
         expect(page).to have_content entry.title
         expect(page).to have_content entry.body
+        expect(page).to have_link entry.blog.user.name
         expect(page).to have_link "Show",href: entry_path(entry)
         expect(page).to have_link "Edit",href: edit_entry_path(entry)
         expect(page).to have_link "Destroy",href: entry_path(entry)

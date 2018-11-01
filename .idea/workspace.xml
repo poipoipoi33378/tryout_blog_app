@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f465d0-48cd-48cf-a201-4a796d21f52e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/blogs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/blogs/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogs/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/entries/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entries/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/system/blogs_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/system/blogs_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/system/comments_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/system/comments_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -20,7 +21,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_user_edit_title_and_body__tryout_blog_app.rcov" NAME="Entries user edit title and body: tryout_blog_app Coverage Results" MODIFIED="1539768937458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app.rcov" NAME="Blogs user show created blog title and blog entries: tryout_blog_app Coverage Results" MODIFIED="1541045699450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app.rcov" NAME="Blogs user show created blog title and blog entries: tryout_blog_app Coverage Results" MODIFIED="1541046818879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Blog__tryout_blog_app.rcov" NAME="Blog: tryout_blog_app Coverage Results" MODIFIED="1539734241801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__notice_mailer_spec___tryout_blog_app.rcov" NAME="Run spec 'notice_mailer_spec': tryout_blog_app Coverage Results" MODIFIED="1540258266889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_home_page__tryout_blog_app.rcov" NAME="Static Pages home page: tryout_blog_app Coverage Results" MODIFIED="1540794091453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
@@ -39,7 +40,7 @@
     <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_send_email_when_comment_is_added___tryout_blog_app.rcov" NAME="Comments send email when comment is added : tryout_blog_app Coverage Results" MODIFIED="1540347892564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Comments__tryout_blog_app.rcov" NAME="Comments: tryout_blog_app Coverage Results" MODIFIED="1540346946401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_GET__entries_not_works___now_write_some_real_specs___tryout_blog_app.rcov" NAME="Entries GET /entries not works! (now write some real specs): tryout_blog_app Coverage Results" MODIFIED="1539903894994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_user_show_created_entry_and_comments__tryout_blog_app.rcov" NAME="Comments user show created entry and comments: tryout_blog_app Coverage Results" MODIFIED="1539832867761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_user_show_created_entry_and_comments__tryout_blog_app.rcov" NAME="Comments user show created entry and comments: tryout_blog_app Coverage Results" MODIFIED="1541047326449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_user_show_created_entry_title_and_body__tryout_blog_app.rcov" NAME="Entries user show created entry title and body: tryout_blog_app Coverage Results" MODIFIED="1539780978598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer__tryout_blog_app.rcov" NAME="NoticeMailer: tryout_blog_app Coverage Results" MODIFIED="1540261985666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Blogs_user_show_blog_index__tryout_blog_app.rcov" NAME="Blogs user show blog index: tryout_blog_app Coverage Results" MODIFIED="1541046628703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
@@ -106,7 +107,7 @@
           <entry key="Gemfile" value="12" />
           <entry key="css" value="1" />
           <entry key="enc" value="2" />
-          <entry key="erb" value="102" />
+          <entry key="erb" value="103" />
           <entry key="gitignore" value="1" />
           <entry key="haml" value="17" />
           <entry key="html" value="2" />
@@ -114,8 +115,8 @@
           <entry key="key" value="1" />
           <entry key="md" value="1" />
           <entry key="pid" value="1" />
-          <entry key="png" value="55" />
-          <entry key="rb" value="243" />
+          <entry key="png" value="57" />
+          <entry key="rb" value="246" />
           <entry key="rb_back" value="1" />
           <entry key="ruby-version" value="1" />
           <entry key="scss" value="13" />
@@ -129,12 +130,12 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="2" />
           <entry key="Haml" value="17" />
-          <entry key="Image" value="55" />
+          <entry key="Image" value="57" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="RHTML" value="102" />
-          <entry key="Ruby" value="255" />
+          <entry key="RHTML" value="103" />
+          <entry key="Ruby" value="258" />
           <entry key="SCSS" value="13" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="6" />
@@ -144,12 +145,12 @@
         <counts>
           <entry key="Gemfile" value="78" />
           <entry key="Ruby Console" value="233" />
-          <entry key="erb" value="2174" />
+          <entry key="erb" value="2251" />
           <entry key="gitignore" value="2" />
           <entry key="haml" value="972" />
           <entry key="js" value="1" />
           <entry key="md" value="46" />
-          <entry key="rb" value="12340" />
+          <entry key="rb" value="12399" />
           <entry key="scss" value="528" />
           <entry key="yml" value="70" />
         </counts>
@@ -160,8 +161,8 @@
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="46" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="2174" />
-          <entry key="Ruby" value="12651" />
+          <entry key="RHTML" value="2251" />
+          <entry key="Ruby" value="12710" />
           <entry key="SCSS" value="528" />
           <entry key="YAML" value="70" />
         </counts>
@@ -193,10 +194,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
+                <state relative-caret-position="330">
                   <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
                 </state>
               </provider>
@@ -205,8 +206,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -223,6 +224,15 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/entries/edit.html.erb">
               <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/entries/show.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -243,19 +253,22 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="498">
-                  <caret line="131" selection-start-line="131" selection-end-line="131" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/system/mailcheck_spec.rb">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/system/entries_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-203" />
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/system/static_pages_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
@@ -268,11 +281,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/system/blogs_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                <state relative-caret-position="215">
+                  <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
                 </state>
               </provider>
             </entry>
@@ -292,9 +305,13 @@
               <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/requests/entries_spec.rb">
-              <provider selected="true" editor-type-id="text-editor" />
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spec/system/comments_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="161">
+                  <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -303,18 +320,6 @@
                 <state relative-caret-position="345">
                   <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/db/schema.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-393" />
               </provider>
             </entry>
           </file>
@@ -368,12 +373,10 @@
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/about.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-        <option value="$PROJECT_DIR$/spec/system/comments_spec.rb" />
         <option value="$PROJECT_DIR$/spec/system/entries_spec.rb" />
         <option value="$PROJECT_DIR$/spec/system/mailcheck_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/blogs/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/entries/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/entries/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/db/migrate/20181029062500_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
@@ -409,9 +412,11 @@
         <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
         <option value="$PROJECT_DIR$/spec/system/static_pages_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
-        <option value="$PROJECT_DIR$/spec/system/blogs_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
+        <option value="$PROJECT_DIR$/spec/system/blogs_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
+        <option value="$PROJECT_DIR$/spec/system/comments_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/entries/show.html.erb" />
       </list>
     </option>
   </component>
@@ -597,7 +602,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Blogs user show blog index: tryout_blog_app">
+  <component name="RunManager" selected="RSpec.Comments user show created entry and comments: tryout_blog_app">
     <configuration name="Blogs user show blog index: tryout_blog_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="tryout_blog_app" />
@@ -700,7 +705,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Static Pages home page home page element without login: tryout_blog_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Comments user show created entry and comments: tryout_blog_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="tryout_blog_app" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -720,10 +725,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/system/static_pages_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/system/comments_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Static Pages home page home page element without login" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Comments user show created entry and comments" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -870,17 +875,17 @@
       <item itemvalue="Rake.spec: tryout_blog_app" />
       <item itemvalue="RSpec.Static Pages user registration user profile: tryout_blog_app" />
       <item itemvalue="RSpec.Blogs: tryout_blog_app" />
-      <item itemvalue="RSpec.Static Pages home page home page element without login: tryout_blog_app" />
       <item itemvalue="RSpec.Blogs user show blog index: tryout_blog_app" />
       <item itemvalue="RSpec.Blogs user show created blog title and blog entries: tryout_blog_app" />
+      <item itemvalue="RSpec.Comments user show created entry and comments: tryout_blog_app" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.Blogs user show blog index: tryout_blog_app" />
+        <item itemvalue="RSpec.Comments user show created entry and comments: tryout_blog_app" />
         <item itemvalue="RSpec.Blogs user show created blog title and blog entries: tryout_blog_app" />
+        <item itemvalue="RSpec.Blogs user show blog index: tryout_blog_app" />
         <item itemvalue="RSpec.Blogs: tryout_blog_app" />
         <item itemvalue="RSpec.Static Pages user registration user profile: tryout_blog_app" />
-        <item itemvalue="RSpec.Static Pages home page home page element without login: tryout_blog_app" />
       </list>
     </recent_temporary>
   </component>
@@ -901,44 +906,44 @@
       <workItem from="1540342436752" duration="4040000" />
       <workItem from="1540346735135" duration="5273000" />
       <workItem from="1540776002939" duration="25552000" />
-      <workItem from="1540947839759" duration="32809000" />
+      <workItem from="1540947839759" duration="33505000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Blogs__tryout_blog_app - 2018.11.01 at 12h 27m 22s.xml">
-      <configuration name="Blogs: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app - 2018.11.01 at 13h 11m 18s.xml">
-      <configuration name="Blogs user show created blog title and blog entries: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app - 2018.11.01 at 13h 11m 50s.xml">
-      <configuration name="Blogs user show created blog title and blog entries: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app - 2018.11.01 at 13h 13m 36s.xml">
-      <configuration name="Blogs user show created blog title and blog entries: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app - 2018.11.01 at 13h 15m 08s.xml">
-      <configuration name="Blogs user show created blog title and blog entries: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.11.01 at 13h 19m 04s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_blog_index__tryout_blog_app - 2018.11.01 at 13h 27m 37s.xml">
-      <configuration name="Blogs user show blog index: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_blog_index__tryout_blog_app - 2018.11.01 at 13h 28m 08s.xml">
-      <configuration name="Blogs user show blog index: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Blogs_user_show_blog_index__tryout_blog_app - 2018.11.01 at 13h 29m 04s.xml">
-      <configuration name="Blogs user show blog index: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Blogs_user_show_blog_index__tryout_blog_app - 2018.11.01 at 13h 29m 52s.xml">
       <configuration name="Blogs user show blog index: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Blogs_user_show_blog_index__tryout_blog_app - 2018.11.01 at 13h 30m 34s.xml">
+      <configuration name="Blogs user show blog index: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app - 2018.11.01 at 13h 32m 40s.xml">
+      <configuration name="Blogs user show created blog title and blog entries: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app - 2018.11.01 at 13h 33m 45s.xml">
+      <configuration name="Blogs user show created blog title and blog entries: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Comments_user_show_created_entry_and_comments__tryout_blog_app - 2018.11.01 at 13h 36m 56s.xml">
+      <configuration name="Comments user show created entry and comments: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Comments_user_show_created_entry_and_comments__tryout_blog_app - 2018.11.01 at 13h 38m 47s.xml">
+      <configuration name="Comments user show created entry and comments: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Comments_user_show_created_entry_and_comments__tryout_blog_app - 2018.11.01 at 13h 40m 01s.xml">
+      <configuration name="Comments user show created entry and comments: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Comments_user_show_created_entry_and_comments__tryout_blog_app - 2018.11.01 at 13h 40m 09s.xml">
+      <configuration name="Comments user show created entry and comments: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Comments_user_show_created_entry_and_comments__tryout_blog_app - 2018.11.01 at 13h 40m 22s.xml">
+      <configuration name="Comments user show created entry and comments: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Comments_user_show_created_entry_and_comments__tryout_blog_app - 2018.11.01 at 13h 41m 28s.xml">
+      <configuration name="Comments user show created entry and comments: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177986000" />
+    <option name="totallyTimeSpent" value="178682000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,42 +1012,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_static_pages_home_page_home_page_element_with_login_309.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181031013031_add_name_to_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181031051406_add_blogs_to_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181031052849_add_user_id_to_blogs.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-393" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181031053634_add_user_id_to_blogs.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20181016061903_create_blogs.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1262,30 +1231,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_blogs_user_show_blog_index_579.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/system/blogs_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_blogs_user_show_blog_index_860.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="330">
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/system/blogs_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/system/mailcheck_spec.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/system/entries_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_comments_user_show_created_entry_and_comments_332.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_comments_user_show_created_entry_and_comments_643.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/system/comments_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/entries/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>

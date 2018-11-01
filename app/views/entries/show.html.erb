@@ -7,8 +7,9 @@
     </div>
     <div class="section-entry">
       <ul class="list-unstyled">
-        <li><%= "Title:#{@entry.title}" %></li>
-        <li><%= "Body:#{@entry.body}" %></li>
+        <li><%= "Title: #{@entry.title}" %></li>
+        <li><%= "Body: #{@entry.body}" %></li>
+        <li> User: <%= link_to @entry.blog.user.name,@entry.blog.user %></li>
       </ul>
     </div>
     <nav>
