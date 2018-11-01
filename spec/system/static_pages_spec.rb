@@ -14,6 +14,8 @@ RSpec.feature "Static Pages", type: :system do
         aggregate_failures do
           expect(page).to have_content 'TRYOUT APP'
           expect(page).to have_link "Home"
+          expect(page).to have_link "Blogs"
+          expect(page).to have_link "Users"
           expect(page).to have_link "Help"
           expect(page).to have_link "Log in"
         end
@@ -175,5 +177,19 @@ RSpec.feature "Static Pages", type: :system do
 
       expect(page).to have_content user.name
     end
+
+    scenario 'user profile' do
+      3.times do
+        FactoryBot.create(:user)
+      end
+      visit root_path
+
+      click_link 'Users'
+
+      User.all.each do |user|
+        expect(page).to have_content(user.name)
+      end
+    end
+
   end
 end

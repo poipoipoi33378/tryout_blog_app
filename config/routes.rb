@@ -4,10 +4,11 @@ Rails.application.routes.draw do
   get '/help',to: 'static_pages#help'
   get '/about',to: 'static_pages#about'
 
-  get '/user/:id',to: 'users#show' ,as: 'user'
+  # get '/user/:id',to: 'users#show' ,as: 'user'
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
+  resources :users ,only: [:show,:index]
   resources :blogs do
     resources :entries,only: [:new,:create]
   end

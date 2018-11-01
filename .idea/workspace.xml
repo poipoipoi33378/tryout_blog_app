@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f465d0-48cd-48cf-a201-4a796d21f52e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/support/request_spec_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/users/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tryout_blog_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tryout_blog_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/blogs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/blogs_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/blogs_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/system/blogs_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/system/blogs_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/system/static_pages_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/system/static_pages_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -30,52 +29,53 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tryout_blog_app@Blogs_user_show_created_blog_title_and_blog_entries__tryout_blog_app.rcov" NAME="Blogs user show created blog title and blog entries: tryout_blog_app Coverage Results" MODIFIED="1539760655522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_user_edit_title_and_body__tryout_blog_app.rcov" NAME="Entries user edit title and body: tryout_blog_app Coverage Results" MODIFIED="1539768937458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Entries__tryout_blog_app.rcov" NAME="Entries: tryout_blog_app Coverage Results" MODIFIED="1540344151890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Blog__tryout_blog_app.rcov" NAME="Blog: tryout_blog_app Coverage Results" MODIFIED="1539734241801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__notice_mailer_spec___tryout_blog_app.rcov" NAME="Run spec 'notice_mailer_spec': tryout_blog_app Coverage Results" MODIFIED="1540258266889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_test__tryout_blog_app.rcov" NAME="Comments test: tryout_blog_app Coverage Results" MODIFIED="1539836121825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_home_page__tryout_blog_app.rcov" NAME="Static Pages home page: tryout_blog_app Coverage Results" MODIFIED="1540794091453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration__tryout_blog_app.rcov" NAME="Static Pages user registration: tryout_blog_app Coverage Results" MODIFIED="1540967543226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@spec__tryout_blog_app.rcov" NAME="spec: tryout_blog_app Coverage Results" MODIFIED="1540974955883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages__tryout_blog_app.rcov" NAME="Static Pages: tryout_blog_app Coverage Results" MODIFIED="1540969369327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__blogs_spec___tryout_blog_app.rcov" NAME="Run spec 'blogs_spec': tryout_blog_app Coverage Results" MODIFIED="1540346429845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__static_pages_spec___tryout_blog_app.rcov" NAME="Run spec 'static_pages_spec': tryout_blog_app Coverage Results" MODIFIED="1540948870204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_user_create_new_comment__tryout_blog_app.rcov" NAME="Comments user create new comment: tryout_blog_app Coverage Results" MODIFIED="1539852547047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer_sendmail_confirm_renders_the_headers__tryout_blog_app.rcov" NAME="NoticeMailer sendmail_confirm renders the headers: tryout_blog_app Coverage Results" MODIFIED="1540275225461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@IRB___tryout_blog_app.rcov" NAME="IRB コンソール: tryout_blog_app Coverage Results" MODIFIED="1539932422413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Entry__tryout_blog_app.rcov" NAME="Entry: tryout_blog_app Coverage Results" MODIFIED="1540966709416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer_sendmail_confirm_renders_the_body__tryout_blog_app.rcov" NAME="NoticeMailer sendmail_confirm renders the body: tryout_blog_app Coverage Results" MODIFIED="1540275236205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_profile__tryout_blog_app.rcov" NAME="Static Pages user registration user profile: tryout_blog_app Coverage Results" MODIFIED="1540969933262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_registration__tryout_blog_app.rcov" NAME="Static Pages user registration user registration: tryout_blog_app Coverage Results" MODIFIED="1540950906533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_profile__tryout_blog_app.rcov" NAME="Static Pages user registration user profile: tryout_blog_app Coverage Results" MODIFIED="1541034155231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_log_in__tryout_blog_app.rcov" NAME="Static Pages user registration user log in: tryout_blog_app Coverage Results" MODIFIED="1540815132053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Blogs__tryout_blog_app.rcov" NAME="Blogs: tryout_blog_app Coverage Results" MODIFIED="1540974905137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_user_create_new_entry__An_error_occurs_if_the_title_or_body_is_blank___tryout_blog_app.rcov" NAME="Entries user create new entry. An error occurs if the title or body is blank : tryout_blog_app Coverage Results" MODIFIED="1539757659412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comment_Entry__tryout_blog_app.rcov" NAME="Comment Entry: tryout_blog_app Coverage Results" MODIFIED="1540966216362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Development__tryout_blog_app.rcov" NAME="Development: tryout_blog_app Coverage Results" MODIFIED="1541035037352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_home_page_home_page_element_without_login__tryout_blog_app.rcov" NAME="Static Pages home page home page element without login: tryout_blog_app Coverage Results" MODIFIED="1541033234525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__comments_spec___tryout_blog_app.rcov" NAME="Run spec 'comments_spec': tryout_blog_app Coverage Results" MODIFIED="1540347940714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@User_has_blogs__tryout_blog_app.rcov" NAME="User has blogs: tryout_blog_app Coverage Results" MODIFIED="1540964758918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_send_email_when_comment_is_added___tryout_blog_app.rcov" NAME="Comments send email when comment is added : tryout_blog_app Coverage Results" MODIFIED="1540347892564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments__tryout_blog_app.rcov" NAME="Comments: tryout_blog_app Coverage Results" MODIFIED="1540346946401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_GET__entries_not_works___now_write_some_real_specs___tryout_blog_app.rcov" NAME="Entries GET /entries not works! (now write some real specs): tryout_blog_app Coverage Results" MODIFIED="1539903894994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_user_show_created_entry_and_comments__tryout_blog_app.rcov" NAME="Comments user show created entry and comments: tryout_blog_app Coverage Results" MODIFIED="1539832867761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_user_show_created_entry_title_and_body__tryout_blog_app.rcov" NAME="Entries user show created entry title and body: tryout_blog_app Coverage Results" MODIFIED="1539780978598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer__tryout_blog_app.rcov" NAME="NoticeMailer: tryout_blog_app Coverage Results" MODIFIED="1540261985666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_home_page_home_page_element_with_login__tryout_blog_app.rcov" NAME="Static Pages home page home page element with login: tryout_blog_app Coverage Results" MODIFIED="1540964924877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Entries__tryout_blog_app.rcov" NAME="Entries: tryout_blog_app Coverage Results" MODIFIED="1540344151890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_test__tryout_blog_app.rcov" NAME="Comments test: tryout_blog_app Coverage Results" MODIFIED="1539836121825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration__tryout_blog_app.rcov" NAME="Static Pages user registration: tryout_blog_app Coverage Results" MODIFIED="1540967543226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@spec__tryout_blog_app.rcov" NAME="spec: tryout_blog_app Coverage Results" MODIFIED="1540975216748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__blogs_spec___tryout_blog_app.rcov" NAME="Run spec 'blogs_spec': tryout_blog_app Coverage Results" MODIFIED="1540346429845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_user_create_new_comment__tryout_blog_app.rcov" NAME="Comments user create new comment: tryout_blog_app Coverage Results" MODIFIED="1539852547047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@IRB___tryout_blog_app.rcov" NAME="IRB コンソール: tryout_blog_app Coverage Results" MODIFIED="1539932422413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Entry__tryout_blog_app.rcov" NAME="Entry: tryout_blog_app Coverage Results" MODIFIED="1540966709416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer_sendmail_confirm_renders_the_body__tryout_blog_app.rcov" NAME="NoticeMailer sendmail_confirm renders the body: tryout_blog_app Coverage Results" MODIFIED="1540275236205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_registration__tryout_blog_app.rcov" NAME="Static Pages user registration user registration: tryout_blog_app Coverage Results" MODIFIED="1540950906533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Blogs_destroy_destroy_associated_entries_and_comments__tryout_blog_app.rcov" NAME="Blogs destroy destroy associated entries and comments: tryout_blog_app Coverage Results" MODIFIED="1539928885903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_log_in_with_google__tryout_blog_app.rcov" NAME="Static Pages user registration user log in with google: tryout_blog_app Coverage Results" MODIFIED="1540952480815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_work_destroy__tryout_blog_app.rcov" NAME="Entries work destroy: tryout_blog_app Coverage Results" MODIFIED="1539936376907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer__tryout_blog_app__1_.rcov" NAME="NoticeMailer: tryout_blog_app (1) Coverage Results" MODIFIED="1540270842707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__comment_spec___tryout_blog_app.rcov" NAME="Run spec 'comment_spec': tryout_blog_app Coverage Results" MODIFIED="1539828399640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@EntriesController_not_returns_a_200_response__tryout_blog_app.rcov" NAME="EntriesController not returns a 200 response: tryout_blog_app Coverage Results" MODIFIED="1539903849906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comment_Entry__tryout_blog_app.rcov" NAME="Comment Entry: tryout_blog_app Coverage Results" MODIFIED="1540966216362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__comments_spec___tryout_blog_app__1_.rcov" NAME="Run spec 'comments_spec': tryout_blog_app (1) Coverage Results" MODIFIED="1540345885150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Development__tryout_blog_app.rcov" NAME="Development: tryout_blog_app Coverage Results" MODIFIED="1540973949064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__comments_spec___tryout_blog_app.rcov" NAME="Run spec 'comments_spec': tryout_blog_app Coverage Results" MODIFIED="1540347940714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@test__tryout_blog_app.rcov" NAME="test: tryout_blog_app Coverage Results" MODIFIED="1539843683160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__entry_spec___tryout_blog_app.rcov" NAME="Run spec 'entry_spec': tryout_blog_app Coverage Results" MODIFIED="1539742231542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@User_has_blogs__tryout_blog_app.rcov" NAME="User has blogs: tryout_blog_app Coverage Results" MODIFIED="1540964758918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_send_email_when_comment_is_added___tryout_blog_app.rcov" NAME="Comments send email when comment is added : tryout_blog_app Coverage Results" MODIFIED="1540347892564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Run_spec__blog_spec___tryout_blog_app.rcov" NAME="Run spec 'blog_spec': tryout_blog_app Coverage Results" MODIFIED="1540966369462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments__tryout_blog_app.rcov" NAME="Comments: tryout_blog_app Coverage Results" MODIFIED="1540346946401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_GET__entries_not_works___now_write_some_real_specs___tryout_blog_app.rcov" NAME="Entries GET /entries not works! (now write some real specs): tryout_blog_app Coverage Results" MODIFIED="1539903894994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_user_registration_user_log_in_and_show_profile_and_setting_and_log_out__tryout_blog_app.rcov" NAME="Static Pages user registration user log in and show profile and setting and log out: tryout_blog_app Coverage Results" MODIFIED="1540961274136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Comments_user_show_created_entry_and_comments__tryout_blog_app.rcov" NAME="Comments user show created entry and comments: tryout_blog_app Coverage Results" MODIFIED="1539832867761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_user_show_created_entry_title_and_body__tryout_blog_app.rcov" NAME="Entries user show created entry title and body: tryout_blog_app Coverage Results" MODIFIED="1539780978598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@Entries_GET__entries_works___now_write_some_real_specs___tryout_blog_app.rcov" NAME="Entries GET /entries works! (now write some real specs): tryout_blog_app Coverage Results" MODIFIED="1539903711850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer__tryout_blog_app.rcov" NAME="NoticeMailer: tryout_blog_app Coverage Results" MODIFIED="1540261985666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@User__tryout_blog_app.rcov" NAME="User: tryout_blog_app Coverage Results" MODIFIED="1540949980302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
     <SUITE FILE_PATH="coverage/tryout_blog_app@NoticeMailer_sendmail_confirm__tryout_blog_app.rcov" NAME="NoticeMailer sendmail_confirm: tryout_blog_app Coverage Results" MODIFIED="1540268298786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@Static_Pages_home_page_home_page_element_with_login__tryout_blog_app.rcov" NAME="Static Pages home page home page element with login: tryout_blog_app Coverage Results" MODIFIED="1540964924877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
-    <SUITE FILE_PATH="coverage/tryout_blog_app@All_specs_in_tryout_blog_app__tryout_blog_app.rcov" NAME="All specs in tryout_blog_app: tryout_blog_app Coverage Results" MODIFIED="1540970731590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
+    <SUITE FILE_PATH="coverage/tryout_blog_app@All_specs_in_tryout_blog_app__tryout_blog_app.rcov" NAME="All specs in tryout_blog_app: tryout_blog_app Coverage Results" MODIFIED="1540975191689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tryout_blog_app" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -110,22 +110,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="11" />
+          <entry key="Gemfile" value="12" />
           <entry key="css" value="1" />
           <entry key="enc" value="2" />
-          <entry key="erb" value="98" />
+          <entry key="erb" value="99" />
           <entry key="gitignore" value="1" />
-          <entry key="haml" value="14" />
+          <entry key="haml" value="17" />
           <entry key="html" value="2" />
           <entry key="js" value="1" />
           <entry key="key" value="1" />
           <entry key="md" value="1" />
           <entry key="pid" value="1" />
           <entry key="png" value="46" />
-          <entry key="rb" value="239" />
+          <entry key="rb" value="241" />
           <entry key="rb_back" value="1" />
           <entry key="ruby-version" value="1" />
-          <entry key="scss" value="12" />
+          <entry key="scss" value="13" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
           <entry key="yml" value="5" />
@@ -135,41 +135,41 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="2" />
-          <entry key="Haml" value="14" />
+          <entry key="Haml" value="17" />
           <entry key="Image" value="46" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="RHTML" value="98" />
-          <entry key="Ruby" value="250" />
-          <entry key="SCSS" value="12" />
+          <entry key="RHTML" value="99" />
+          <entry key="Ruby" value="253" />
+          <entry key="SCSS" value="13" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="72" />
+          <entry key="Gemfile" value="78" />
           <entry key="Ruby Console" value="233" />
           <entry key="erb" value="2111" />
           <entry key="gitignore" value="2" />
-          <entry key="haml" value="811" />
+          <entry key="haml" value="972" />
           <entry key="js" value="1" />
           <entry key="md" value="46" />
-          <entry key="rb" value="11707" />
-          <entry key="scss" value="526" />
+          <entry key="rb" value="11903" />
+          <entry key="scss" value="528" />
           <entry key="yml" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Haml" value="811" />
+          <entry key="Haml" value="972" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="46" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="2111" />
-          <entry key="Ruby" value="12012" />
-          <entry key="SCSS" value="526" />
+          <entry key="Ruby" value="12214" />
+          <entry key="SCSS" value="528" />
           <entry key="YAML" value="70" />
         </counts>
       </usages-collector>
@@ -185,26 +185,67 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                <state relative-caret-position="285">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/system/blogs_spec.rb">
+            <entry file="file://$PROJECT_DIR$/app/views/blogs/new.html.erb">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+                <state relative-caret-position="75">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
+            <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Gemfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="498">
+                  <caret line="131" selection-start-line="131" selection-end-line="131" />
                 </state>
               </provider>
             </entry>
@@ -212,35 +253,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="150">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
+            <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/requests/blogs_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="58" selection-start-line="58" selection-end-line="58" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -249,11 +272,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/system/static_pages_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+                <state relative-caret-position="362">
+                  <caret line="171" selection-start-line="171" selection-end-line="171" />
                   <folding>
                     <element signature="e#4222#4526#0" />
                   </folding>
@@ -266,7 +289,7 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/support/request_spec_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
@@ -329,8 +352,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/features/entries_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/mailers/notice_mailer_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/help.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
@@ -346,8 +367,6 @@
         <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/entries/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20181029062500_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -369,17 +388,21 @@
         <option value="$PROJECT_DIR$/spec/models/blog_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/blogs.rb" />
         <option value="$PROJECT_DIR$/spec/models/entry_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/system/static_pages_spec.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
         <option value="$PROJECT_DIR$/spec/requests/blogs_spec.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/system/blogs_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
         <option value="$PROJECT_DIR$/spec/support/request_spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/spec/system/static_pages_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -497,6 +520,20 @@
               <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryout_blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="static_pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -604,32 +641,6 @@
               <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="devise (v4.5.0, rbenv: 2.5.1) [gem]" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="devise (v4.5.0, rbenv: 2.5.1) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="devise (v4.5.0, rbenv: 2.5.1) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="devise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tryout_blog_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="devise (v4.5.0, rbenv: 2.5.1) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="devise" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -663,7 +674,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rake.spec: tryout_blog_app">
+  <component name="RunManager" selected="Rails.Development: tryout_blog_app">
     <configuration name="Blogs: tryout_blog_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="tryout_blog_app" />
@@ -698,7 +709,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Entry: tryout_blog_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Static Pages home page home page element without login: tryout_blog_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="tryout_blog_app" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -718,10 +729,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/entry_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/system/static_pages_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Entry" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Static Pages home page home page element without login" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -934,19 +945,19 @@
       <item itemvalue="Rails.Development: tryout_blog_app" />
       <item itemvalue="Rake.test: tryout_blog_app" />
       <item itemvalue="Rake.spec: tryout_blog_app" />
-      <item itemvalue="RSpec.Entry: tryout_blog_app" />
       <item itemvalue="RSpec.Static Pages user registration: tryout_blog_app" />
       <item itemvalue="RSpec.Static Pages: tryout_blog_app" />
       <item itemvalue="RSpec.Static Pages user registration user profile: tryout_blog_app" />
       <item itemvalue="RSpec.Blogs: tryout_blog_app" />
+      <item itemvalue="RSpec.Static Pages home page home page element without login: tryout_blog_app" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.Blogs: tryout_blog_app" />
         <item itemvalue="RSpec.Static Pages user registration user profile: tryout_blog_app" />
+        <item itemvalue="RSpec.Static Pages home page home page element without login: tryout_blog_app" />
+        <item itemvalue="RSpec.Blogs: tryout_blog_app" />
         <item itemvalue="RSpec.Static Pages: tryout_blog_app" />
         <item itemvalue="RSpec.Static Pages user registration: tryout_blog_app" />
-        <item itemvalue="RSpec.Entry: tryout_blog_app" />
       </list>
     </recent_temporary>
   </component>
@@ -967,44 +978,44 @@
       <workItem from="1540342436752" duration="4040000" />
       <workItem from="1540346735135" duration="5273000" />
       <workItem from="1540776002939" duration="25552000" />
-      <workItem from="1540947839759" duration="21374000" />
+      <workItem from="1540947839759" duration="24788000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 00m 26s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_home_page_home_page_element_without_login__tryout_blog_app - 2018.11.01 at 09h 42m 55s.xml">
+      <configuration name="Static Pages home page home page element without login: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 04m 09s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_home_page_home_page_element_without_login__tryout_blog_app - 2018.11.01 at 09h 45m 08s.xml">
+      <configuration name="Static Pages home page home page element without login: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 05m 20s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_home_page_home_page_element_without_login__tryout_blog_app - 2018.11.01 at 09h 46m 23s.xml">
+      <configuration name="Static Pages home page home page element without login: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 20m 08s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_home_page_home_page_element_without_login__tryout_blog_app - 2018.11.01 at 09h 46m 54s.xml">
+      <configuration name="Static Pages home page home page element without login: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 24m 48s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_home_page_home_page_element_without_login__tryout_blog_app - 2018.11.01 at 09h 47m 23s.xml">
+      <configuration name="Static Pages home page home page element without login: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 26m 40s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_user_registration_user_profile__tryout_blog_app - 2018.11.01 at 09h 53m 12s.xml">
+      <configuration name="Static Pages user registration user profile: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 27m 57s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_user_registration_user_profile__tryout_blog_app - 2018.11.01 at 09h 55m 25s.xml">
+      <configuration name="Static Pages user registration user profile: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Blogs__tryout_blog_app - 2018.10.31 at 17h 30m 39s.xml">
-      <configuration name="Blogs: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Static_Pages_user_registration_user_profile__tryout_blog_app - 2018.11.01 at 10h 00m 07s.xml">
+      <configuration name="Static Pages user registration user profile: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Blogs__tryout_blog_app - 2018.10.31 at 17h 35m 12s.xml">
-      <configuration name="Blogs: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Static_Pages_user_registration_user_profile__tryout_blog_app - 2018.11.01 at 10h 01m 19s.xml">
+      <configuration name="Static Pages user registration user profile: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__tryout_blog_app - 2018.10.31 at 17h 36m 29s.xml">
-      <configuration name="spec: tryout_blog_app" configurationId="RakeRunConfigurationType" />
+    <history-entry file="Static_Pages_user_registration_user_profile__tryout_blog_app - 2018.11.01 at 10h 02m 40s.xml">
+      <configuration name="Static Pages user registration user profile: tryout_blog_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166551000" />
+    <option name="totallyTimeSpent" value="169965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1019,12 +1030,12 @@
     <frame x="-640" y="-1023" width="1815" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13761985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13761985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32983682" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32983682" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32983682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997669" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1032,7 +1043,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32983682" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32983682" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32983682" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1073,33 +1084,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_static_pages_user_registration_user_log_in_and_show_profile_and_setting_and_log_out_463.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_static_pages_user_registration_user_log_in_and_show_profile_and_setting_and_log_out_237.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.5.0/lib/devise/test/integration_helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-96">
@@ -1249,31 +1233,10 @@
     <entry file="file://$PROJECT_DIR$/tmp/screenshots/failures_r_spec_example_groups_static_pages_user_registration_user_registration_258.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="51" selection-start-column="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1287,20 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1321,16 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/system/static_pages_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
-          <folding>
-            <element signature="e#4222#4526#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/requests/entries_spec.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1344,14 +1283,90 @@
     <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+        <state relative-caret-position="363">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/system/static_pages_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+          <folding>
+            <element signature="e#4222#4526#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
