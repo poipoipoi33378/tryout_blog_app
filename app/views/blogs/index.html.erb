@@ -10,6 +10,7 @@
       <thead>
       <tr>
         <th>Title</th>
+        <th>User</th>
         <th></th>
         <th></th>
         <th></th>
@@ -19,6 +20,7 @@
       <% @blogs.each do |blog| %>
         <tr>
           <td><%= blog.title %></td>
+          <td><%= link_to blog.user.name,blog.user %></td>
           <td><%= link_to 'Show',blog_path(blog) %></td>
           <td><%= link_to 'Edit',edit_blog_path(blog) %></td>
           <td><%= link_to 'Destroy',blog,method: :delete ,data:{ confirm: "You sure?"} %></td>

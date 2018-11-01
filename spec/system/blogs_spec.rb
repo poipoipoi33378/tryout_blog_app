@@ -13,8 +13,14 @@ RSpec.feature "Blogs", type: :system do
   end
 
   scenario "user show blog index" do
-    expect(page).to have_content @blog1.title
-    expect(page).to have_content @blog.title
+
+    Blog.all.each do |blog|
+      expect(page).to have_content blog.title
+      expect(page).to have_link blog.user.name
+      expect(page).to have_link "Show",href: blog_path(blog)
+      expect(page).to have_link "Edit",href: edit_blog_path(blog)
+      expect(page).to have_link "Destroy",href: blog_path(blog)
+    end
 
     30.times do
       FactoryBot.create(:blog,user_id: user.id)
