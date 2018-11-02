@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'faker'
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'loofah','~> 2.2.3'
 
 gem 'simple_form'
 gem 'haml-rails'
